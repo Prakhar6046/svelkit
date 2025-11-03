@@ -125,20 +125,20 @@ export const carriers = writable<CarrierOption[]>([
     name: 'FedEx Express',
     description: 'International Priority • Next Business Day',
     price: '$25.99',
-    logo: '$lib/assets/images/fedex-with-bg.svg ',
+    logo: '/assets/images/fedex-with-bg.svg ',
   },
   {
     id: 'option-two',
     name: 'UPS Worldwide Saver',
     description: '2 Business Days Delivery',
     price: '$22.49',
-    logo: '$lib/assets/images/ups.svg',
+    logo: '/assets/images/ups.svg',
   },
   {
     id: 'option-three',
     name: 'DHL Express',
     description: 'Fastest International Shipping',
     price: '$28.10',
-    logo: '$lib/assets/images/ups.svg',
+    logo: '/assets/images/ups.svg',
   },
 ]);
