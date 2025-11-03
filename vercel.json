@@ -1,6 +1,4 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": ".svelte-kit/output/client",
   "framework": "sveltekit"
 }
 
