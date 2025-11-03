@@ -34,6 +34,7 @@
   import { navigate } from 'svelte-routing';
   import { showDashboardSidebar } from '$lib/stores/store';
   import DashboardHeader from '$lib/components/DashboardHeader.svelte';
+	import { goto } from '$app/navigation';
 </script>
 
 <main class="bg-bland-650 h-full">
@@ -59,7 +60,7 @@
       <div class="ms-auto">
         <Button
           onclick={() => {
-            navigate('/create-shipment');
+            goto('/create-shipment');
           }}
           class="common-button"
         >

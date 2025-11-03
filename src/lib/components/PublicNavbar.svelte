@@ -24,6 +24,7 @@
   import LanguageDropdown from './LanguageDropdown.svelte';
   import { _ } from 'svelte-i18n';
   import { navigate } from 'svelte-routing';
+	import { goto } from '$app/navigation';
 
   interface MenuItem {
     title: string;
@@ -166,7 +167,7 @@
         <LanguageDropdown />
         <button
           onclick={() => {
-            navigate('/login');
+            goto('/login');
           }}
           class="font-semibold text-xs sm:text-sm md:text-base shadow-none border border-bland-200 rounded-xl py-1 sm:py-2 xl:py-2.5 px-2.5 sm:px-4 xl:!px-6 h-auto cursor-pointer hover:shadow-md"
         >
@@ -174,7 +175,7 @@
         </button>
         <button
           onclick={() => {
-            navigate('/login');
+            goto('/login');
           }}
           class="hidden sm:flex items-center font-semibold text-xs sm:text-sm md:text-base text-bland-25 bg-primary-400 shadow-none border border-primary-400 rounded-xl py-1 sm:py-2 xl:py-2.5 px-2.5 sm:px-4 xl:!px-6 h-auto cursor-pointer hover:shadow-md"
         >

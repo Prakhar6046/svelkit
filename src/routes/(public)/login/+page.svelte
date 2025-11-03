@@ -17,6 +17,7 @@
   import { navigate } from 'svelte-routing';
   import { createForm } from 'svelte-forms-lib';
   import * as yup from 'yup';
+	import { goto } from '$app/navigation';
 
   //   import PublicFooter from '$lib/components/PublicFooter.svelte';
 
@@ -62,7 +63,7 @@
 
       if (res.status === 'success') {
         toast.success(res.message);
-        setTimeout(() => navigate('/dashboard'), 2000);
+        setTimeout(() => goto('/dashboard'), 2000);
       } else {
         toast.error(res.message);
       }
@@ -81,7 +82,7 @@
 
       if (res.status === 'success') {
         toast.success(res.message);
-        setTimeout(() => navigate('/dashboard'), 2000);
+        setTimeout(() => goto('/dashboard'), 2000);
       } else {
         toast.error(res.message);
       }
@@ -125,7 +126,7 @@
   </a>
   <button
     on:click={() => {
-      navigate('/');
+      goto('/');
     }}
     class="font-semibold text-sm sm:text-base md:text-lg shadow-none border border-bland-200 rounded-xl py-1 sm:py-2 xl:py-2.5 px-2.5 sm:px-4 xl:!px-6 h-auto cursor-pointer hover:shadow-md"
   >
