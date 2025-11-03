@@ -2,7 +2,7 @@
 	import Icon from '@iconify/svelte';
 	import AppLogo from '$lib/assets/static/img/app-logo.svg';
 	import { Collapsible, CollapsibleContent, CollapsibleTrigger } from './ui/collapsible';
-	import { navigate } from 'svelte-routing';
+	import { goto } from '$app/navigation';
 	import { showDashboardSidebar } from '../stores/store';
 	import { onMount, onDestroy } from 'svelte';
 	import { browser } from '$app/environment';
@@ -121,7 +121,7 @@
 		<!-- Dashboard -->
 		<li
 			onclick={() => {
-				navigate('/dashboard');
+				goto('/dashboard');
 				handleNavClick();
 			}}
 			class={`flex cursor-pointer items-center gap-4 rounded-md p-2 text-sm font-medium duration-100
@@ -133,7 +133,10 @@
 
 		<!-- Create Shipment -->
 		<li
-			onclick={() => navigate('/create-shipment')}
+			onclick={() => {
+				goto('/create-shipment');
+				handleNavClick();
+			}}
 			class={`flex cursor-pointer items-center gap-4 rounded-md p-2 text-sm font-medium duration-100
         ${isActive('/create-shipment') ? 'bg-primary-400 text-bland-25' : 'text-bland-950 hover:bg-primary-400 hover:text-bland-25'}`}
 		>
@@ -143,7 +146,10 @@
 
 		<!-- Estimates -->
 		<li
-			onclick={() => navigate('/estimates')}
+			onclick={() => {
+				goto('/estimates');
+				handleNavClick();
+			}}
 			class={`flex cursor-pointer items-center gap-4 rounded-md p-2 text-sm font-medium duration-100
         ${isActive('/estimates') ? 'bg-primary-400 text-bland-25' : 'text-bland-950 hover:bg-primary-400 hover:text-bland-25'}`}
 		>
@@ -153,7 +159,10 @@
 
 		<!-- History -->
 		<li
-			onclick={() => navigate('/history')}
+			onclick={() => {
+				goto('/history');
+				handleNavClick();
+			}}
 			class={`flex cursor-pointer items-center gap-4 rounded-md p-2 text-sm font-medium duration-100
         ${isActive('/history') ? 'bg-primary-400 text-bland-25' : 'text-bland-950 hover:bg-primary-400 hover:text-bland-25'}`}
 		>
@@ -184,7 +193,10 @@
 				<CollapsibleContent>
 					<ul class="ms-5 mt-3 flex flex-col gap-1.5">
 						<li
-							onclick={() => navigate('/pickups/schedule')}
+							onclick={() => {
+								goto('/pickups/schedule');
+								handleNavClick();
+							}}
 							class={`cursor-pointer rounded-md px-3 py-2 text-sm font-medium ${
 								isActive('/pickups/schedule') ||
 								isActive('/pickups/schedule-new-pickup') ||
@@ -196,7 +208,10 @@
 							Schedule
 						</li>
 						<li
-							onclick={() => navigate('/pickups/cancel-history')}
+							onclick={() => {
+								goto('/pickups/cancel-history');
+								handleNavClick();
+							}}
 							class={`cursor-pointer rounded-md px-3 py-2 text-sm font-medium ${
 								isActive('/pickups/cancel-history')
 									? 'bg-bland-200/50 text-bland-950'
@@ -206,7 +221,10 @@
 							Cancel / History
 						</li>
 						<li
-							onclick={() => navigate('/pickups/cutoff')}
+							onclick={() => {
+								goto('/pickups/cutoff');
+								handleNavClick();
+							}}
 							class={`cursor-pointer rounded-md px-3 py-2 text-sm font-medium ${
 								isActive('/pickups/cutoff')
 									? 'bg-bland-200/50 text-bland-950'

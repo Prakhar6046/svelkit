@@ -2,22 +2,22 @@
   // @ts-nocheck
   import { writable, derived } from 'svelte/store';
   import Icon from '@iconify/svelte';
-  import Sidebar from '../../lib/components/Sidebar.svelte';
-  import { showDashboardSidebar } from '../../lib/stores/store';
-  import { Button } from '../../lib/components/ui/button';
+  import Sidebar from '$lib/components/Sidebar.svelte';
+  import { showDashboardSidebar } from '$lib/stores/store';
+  import { Button } from '$lib/components/ui/button';
   import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-  } from '../../lib/components/ui/dropdown-menu';
-  import UserImg from '../../../public/assets/images/dashboard/user.png';
-  import * as Tabs from '../../../src/lib/components/ui/tabs';
-  import Input from '../../lib/components/ui/input/input.svelte';
-  import Checkbox from '../../lib/components/ui/checkbox/checkbox.svelte';
-  import Label from '../../lib/components/ui/label/label.svelte';
-  import * as Table from '../../lib/components/ui/table';
-  import * as Dialog from '../../lib/components/ui/dialog';
+  } from '$lib/components/ui/dropdown-menu';
+  import UserImg from '$lib/assets/images/dashboard/user.png';
+  import * as Tabs from '$lib/components/ui/tabs';
+  import Input from '$lib/components/ui/input/input.svelte';
+  import Checkbox from '$lib/components/ui/checkbox/checkbox.svelte';
+  import Label from '$lib/components/ui/label/label.svelte';
+  import * as Table from '$lib/components/ui/table';
+  import * as Dialog from '$lib/components/ui/dialog';
 
   import {
     Select,
@@ -26,15 +26,16 @@
     SelectTrigger,
     SelectGroup,
     SelectLabel,
-  } from '../../lib/components/ui/select';
+  } from '$lib/components/ui/select';
   import { getLocalTimeZone } from '@internationalized/date';
-  import Calendar from '../../lib/components/Calendar.svelte';
+  import Calendar from '$lib/components/Calendar.svelte';
 
   import { DatePicker } from '@svelte-plugins/datepicker';
   import { format } from 'date-fns';
-  import DashboardHeader from '../../lib/components/DashboardHeader.svelte';
+  import DashboardHeader from '$lib/components/DashboardHeader.svelte';
+  import { getShipments } from '$lib/services/shipments.service';
 
-  let startDate = new Date();
+  let startDate = $state(new Date());
   let dateFormat = 'MM/dd/yy';
   let isOpen = false;
 
@@ -50,426 +51,36 @@
     return (dateString && format(new Date(dateString), dateFormat)) || '';
   };
 
-  let formattedStartDate = formatDate(startDate);
+  let formattedStartDate = $derived(formatDate(startDate));
 
   const onChange = () => {
     startDate = new Date(formattedStartDate);
   };
 
-  $: formattedStartDate = formatDate(startDate);
-
   // ==================== DATA ARRAY ====================
   // This is where all shipment data is maintained
-  const shipmentsData = [
-    {
-      id: 1,
-      trackingId: 'TRK-24-001',
-      status: 'Delivered',
-      recipient: 'John Doe',
-      location: 'New York',
-      carrier: 'FedEx',
-      carrierImg: '/assets/images/carrierServices1.png',
-      service: 'International Priority',
-      date: '2025-09-15',
-      shipper: 'Adnan',
-      trackingNumber: 'FX123456789',
-      weight: '5kg',
-      dimensions: '30 x 20 x 15 cm',
-      estimatedDelivery: 'Sep 20, 2025',
-      shippingCost: '$15.00',
-    },
-    {
-      id: 2,
-      trackingId: 'TRK-24-002',
-      status: 'Delivered',
-      recipient: 'Jane Smith',
-      location: 'Los Angeles',
-      carrier: 'FedEx',
-      carrierImg: '/assets/images/carrierServices1.png',
-      service: 'International Priority',
-      date: '2025-09-16',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'FX123456790',
-      weight: '3kg',
-      dimensions: '25 x 15 x 10 cm',
-      estimatedDelivery: 'Sep 21, 2025',
-      shippingCost: '$12.00',
-    },
-    {
-      id: 3,
-      trackingId: 'TRK-24-003',
-      status: 'Created',
-      recipient: 'Bob Wilson',
-      location: 'Chicago',
-      carrier: 'USPS',
-      carrierImg: '/assets/images/carrierServices2.png',
-      service: 'Standard',
-      date: '2025-10-01',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'US123456789',
-      weight: '2kg',
-      dimensions: '20 x 15 x 8 cm',
-      estimatedDelivery: 'Oct 10, 2025',
-      shippingCost: '$8.00',
-    },
-    {
-      id: 4,
-      trackingId: 'TRK-24-004',
-      status: 'Created',
-      recipient: 'Alice Brown',
-      location: 'Houston',
-      carrier: 'DHL Express',
-      carrierImg: '/assets/images/carrierServices3.png',
-      service: 'Express',
-      date: '2025-10-02',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'DH123456789',
-      weight: '4kg',
-      dimensions: '28 x 18 x 12 cm',
-      estimatedDelivery: 'Oct 05, 2025',
-      shippingCost: '$25.00',
-    },
-    {
-      id: 5,
-      trackingId: 'TRK-24-005',
-      status: 'In Transit',
-      recipient: 'Charlie Davis',
-      location: 'Phoenix',
-      carrier: 'FedEx',
-      carrierImg: '/assets/images/carrierServices1.png',
-      service: 'International Priority',
-      date: '2025-10-15',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'FX123456791',
-      weight: '6kg',
-      dimensions: '35 x 25 x 18 cm',
-      estimatedDelivery: 'Oct 20, 2025',
-      shippingCost: '$18.00',
-    },
-    {
-      id: 6,
-      trackingId: 'TRK-24-006',
-      status: 'In Transit',
-      recipient: 'Diana Evans',
-      location: 'Philadelphia',
-      carrier: 'USPS',
-      carrierImg: '/assets/images/carrierServices2.png',
-      service: 'Standard',
-      date: '2025-10-16',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'US123456790',
-      weight: '3.5kg',
-      dimensions: '22 x 16 x 10 cm',
-      estimatedDelivery: 'Oct 25, 2025',
-      shippingCost: '$10.00',
-    },
-    {
-      id: 7,
-      trackingId: 'TRK-24-007',
-      status: 'In Transit',
-      recipient: 'Ethan Foster',
-      location: 'San Antonio',
-      carrier: 'FedEx',
-      carrierImg: '/assets/images/carrierServices1.png',
-      service: 'Express',
-      date: '2025-10-17',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'FX123456792',
-      weight: '4.5kg',
-      dimensions: '30 x 20 x 14 cm',
-      estimatedDelivery: 'Oct 19, 2025',
-      shippingCost: '$22.00',
-    },
-    {
-      id: 8,
-      trackingId: 'TRK-24-008',
-      status: 'In Transit',
-      recipient: 'Fiona Green',
-      location: 'San Diego',
-      carrier: 'DHL Express',
-      carrierImg: '/assets/images/carrierServices3.png',
-      service: 'International Priority',
-      date: '2025-10-18',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'DH123456790',
-      weight: '5.5kg',
-      dimensions: '32 x 22 x 16 cm',
-      estimatedDelivery: 'Oct 22, 2025',
-      shippingCost: '$28.00',
-    },
-    {
-      id: 9,
-      trackingId: 'TRK-24-009',
-      status: 'In Transit',
-      recipient: 'George Harris',
-      location: 'Dallas',
-      carrier: 'FedEx',
-      carrierImg: '/assets/images/carrierServices1.png',
-      service: 'Standard',
-      date: '2025-10-19',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'FX123456793',
-      weight: '2.8kg',
-      dimensions: '24 x 18 x 12 cm',
-      estimatedDelivery: 'Oct 28, 2025',
-      shippingCost: '$9.00',
-    },
-    {
-      id: 10,
-      trackingId: 'TRK-24-010',
-      status: 'In Transit',
-      recipient: 'Hannah White',
-      location: 'San Jose',
-      carrier: 'USPS',
-      carrierImg: '/assets/images/carrierServices2.png',
-      service: 'Express',
-      date: '2025-10-20',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'US123456791',
-      weight: '3.2kg',
-      dimensions: '26 x 19 x 11 cm',
-      estimatedDelivery: 'Oct 23, 2025',
-      shippingCost: '$16.00',
-    },
-    {
-      id: 11,
-      trackingId: 'TRK-24-011',
-      status: 'In Transit',
-      recipient: 'Ian Clark',
-      location: 'Austin',
-      carrier: 'FedEx',
-      carrierImg: '/assets/images/carrierServices1.png',
-      service: 'International Priority',
-      date: '2025-10-21',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'FX123456794',
-      weight: '4.8kg',
-      dimensions: '29 x 21 x 15 cm',
-      estimatedDelivery: 'Oct 26, 2025',
-      shippingCost: '$17.00',
-    },
-    {
-      id: 12,
-      trackingId: 'TRK-24-012',
-      status: 'In Transit',
-      recipient: 'Julia Martinez',
-      location: 'Jacksonville',
-      carrier: 'DHL Express',
-      carrierImg: '/assets/images/carrierServices3.png',
-      service: 'Standard',
-      date: '2025-10-22',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'DH123456791',
-      weight: '3.7kg',
-      dimensions: '27 x 20 x 13 cm',
-      estimatedDelivery: 'Oct 30, 2025',
-      shippingCost: '$11.00',
-    },
-    {
-      id: 13,
-      trackingId: 'TRK-24-013',
-      status: 'Exception',
-      recipient: 'Kevin Lee',
-      location: 'Fort Worth',
-      carrier: 'FedEx',
-      carrierImg: '/assets/images/carrierServices1.png',
-      service: 'Express',
-      date: '2025-10-23',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'FX123456795',
-      weight: '5.2kg',
-      dimensions: '31 x 23 x 17 cm',
-      estimatedDelivery: 'Oct 25, 2025',
-      shippingCost: '$24.00',
-    },
-    {
-      id: 14,
-      trackingId: 'TRK-24-014',
-      status: 'Exception',
-      recipient: 'Laura King',
-      location: 'Columbus',
-      carrier: 'USPS',
-      carrierImg: '/assets/images/carrierServices2.png',
-      service: 'International Priority',
-      date: '2025-10-24',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'US123456792',
-      weight: '4.1kg',
-      dimensions: '28 x 19 x 14 cm',
-      estimatedDelivery: 'Oct 29, 2025',
-      shippingCost: '$14.00',
-    },
-    {
-      id: 15,
-      trackingId: 'TRK-24-015',
-      status: 'Delivered',
-      recipient: 'Mike Nelson',
-      location: 'Charlotte',
-      carrier: 'FedEx',
-      carrierImg: '/assets/images/carrierServices1.png',
-      service: 'Standard',
-      date: '2025-09-17',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'FX123456796',
-      weight: '2.5kg',
-      dimensions: '23 x 17 x 9 cm',
-      estimatedDelivery: 'Sep 26, 2025',
-      shippingCost: '$7.50',
-    },
-    {
-      id: 16,
-      trackingId: 'TRK-24-016',
-      status: 'Delivered',
-      recipient: 'Nancy Scott',
-      location: 'Indianapolis',
-      carrier: 'DHL Express',
-      carrierImg: '/assets/images/carrierServices3.png',
-      service: 'Express',
-      date: '2025-09-18',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'DH123456792',
-      weight: '3.9kg',
-      dimensions: '27 x 18 x 12 cm',
-      estimatedDelivery: 'Sep 21, 2025',
-      shippingCost: '$21.00',
-    },
-    {
-      id: 17,
-      trackingId: 'TRK-24-017',
-      status: 'Delivered',
-      recipient: 'Oscar Adams',
-      location: 'Seattle',
-      carrier: 'FedEx',
-      carrierImg: '/assets/images/carrierServices1.png',
-      service: 'International Priority',
-      date: '2025-09-19',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'FX123456797',
-      weight: '5.8kg',
-      dimensions: '33 x 24 x 19 cm',
-      estimatedDelivery: 'Sep 24, 2025',
-      shippingCost: '$19.00',
-    },
-    {
-      id: 18,
-      trackingId: 'TRK-24-018',
-      status: 'Delivered',
-      recipient: 'Paula Baker',
-      location: 'Denver',
-      carrier: 'USPS',
-      carrierImg: '/assets/images/carrierServices2.png',
-      service: 'Standard',
-      date: '2025-09-20',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'US123456793',
-      weight: '3.3kg',
-      dimensions: '25 x 18 x 11 cm',
-      estimatedDelivery: 'Sep 29, 2025',
-      shippingCost: '$9.50',
-    },
-    {
-      id: 19,
-      trackingId: 'TRK-24-019',
-      status: 'Delivered',
-      recipient: 'Quinn Carter',
-      location: 'Boston',
-      carrier: 'FedEx',
-      carrierImg: '/assets/images/carrierServices1.png',
-      service: 'Express',
-      date: '2025-09-21',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'FX123456798',
-      weight: '4.6kg',
-      dimensions: '29 x 21 x 15 cm',
-      estimatedDelivery: 'Sep 23, 2025',
-      shippingCost: '$23.00',
-    },
-    {
-      id: 20,
-      trackingId: 'TRK-24-020',
-      status: 'Delivered',
-      recipient: 'Rachel Turner',
-      location: 'Nashville',
-      carrier: 'DHL Express',
-      carrierImg: '/assets/images/carrierServices3.png',
-      service: 'International Priority',
-      date: '2025-09-22',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'DH123456793',
-      weight: '5.1kg',
-      dimensions: '30 x 22 x 16 cm',
-      estimatedDelivery: 'Sep 27, 2025',
-      shippingCost: '$26.00',
-    },
-    {
-      id: 21,
-      trackingId: 'TRK-24-021',
-      status: 'Delivered',
-      recipient: 'Sam Phillips',
-      location: 'Detroit',
-      carrier: 'FedEx',
-      carrierImg: '/assets/images/carrierServices1.png',
-      service: 'Standard',
-      date: '2025-09-23',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'FX123456799',
-      weight: '2.9kg',
-      dimensions: '24 x 19 x 10 cm',
-      estimatedDelivery: 'Oct 02, 2025',
-      shippingCost: '$8.50',
-    },
-    {
-      id: 22,
-      trackingId: 'TRK-24-022',
-      status: 'Delivered',
-      recipient: 'Tina Campbell',
-      location: 'Portland',
-      carrier: 'USPS',
-      carrierImg: '/assets/images/carrierServices2.png',
-      service: 'Express',
-      date: '2025-09-24',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'US123456794',
-      weight: '3.6kg',
-      dimensions: '26 x 20 x 12 cm',
-      estimatedDelivery: 'Sep 27, 2025',
-      shippingCost: '$15.00',
-    },
-    {
-      id: 23,
-      trackingId: 'TRK-24-023',
-      status: 'Delivered',
-      recipient: 'Uma Mitchell',
-      location: 'Las Vegas',
-      carrier: 'FedEx',
-      carrierImg: '/assets/images/carrierServices1.png',
-      service: 'International Priority',
-      date: '2025-09-25',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'FX123456800',
-      weight: '4.9kg',
-      dimensions: '30 x 21 x 16 cm',
-      estimatedDelivery: 'Sep 30, 2025',
-      shippingCost: '$18.50',
-    },
-    {
-      id: 24,
-      trackingId: 'TRK-24-024',
-      status: 'Delivered',
-      recipient: 'Victor Roberts',
-      location: 'Memphis',
-      carrier: 'DHL Express',
-      carrierImg: '/assets/images/carrierServices3.png',
-      service: 'Standard',
-      date: '2025-09-26',
-      shipper: 'Abir Adnan',
-      trackingNumber: 'DH123456794',
-      weight: '3.4kg',
-      dimensions: '25 x 19 x 11 cm',
-      estimatedDelivery: 'Oct 05, 2025',
-      shippingCost: '$10.50',
-    },
-  ];
+  let shipmentsData = $state([]);
+  let loading = $state(false);
+
+  // Load shipments on component mount
+  async function loadShipments() {
+    loading = true;
+    try {
+      const response = await getShipments();
+      if (response.success) {
+        shipmentsData = response.data.shipments;
+      }
+    } catch (error) {
+      console.error('Failed to load shipments:', error);
+    } finally {
+      loading = false;
+    }
+  }
+
+  // Load data when component mounts
+  $effect(() => {
+    loadShipments();
+  });
 
   // ==================== STORES (STATE MANAGEMENT) ====================
   // Svelte stores are like React useState - they hold reactive state
@@ -482,36 +93,43 @@
 
   // Pending (dialog) filter state
 
-  let filtersDialogOpen = false;
-  let pFedEx = false;
-  let pUSPS = false;
-  let pDHL = false;
-  let pStandard = false;
-  let pExpress = false;
-  let pFreight = false;
-  let pInternational = false;
-  let pMinPrice = 0; // always keep min at 0
-  let pMaxPrice = 1000; // dynamic max value
-  let pUseSlider = true; // when true, slider active and number inputs disabled
-  let pendingCount = shipmentsData.length;
+  let filtersDialogOpen = $state(false);
+  let pFedEx = $state(false);
+  let pUSPS = $state(false);
+  let pDHL = $state(false);
+  let pStandard = $state(false);
+  let pExpress = $state(false);
+  let pFreight = $state(false);
+  let pInternational = $state(false);
+  let pMinPrice = $state(0); // always keep min at 0
+  let pMaxPrice = $state(1000); // dynamic max value
+  let pUseSlider = $state(true); // when true, slider active and number inputs disabled
+  let pendingCount = $state(0);
   let pendingDebounce = null;
 
+  // Update pending count when shipmentsData changes
+  $effect(() => {
+    pendingCount = shipmentsData.length;
+  });
+
   // Function to update pending count with debouncing
-  $: if (filtersDialogOpen) {
-    clearTimeout(pendingDebounce);
-    pendingDebounce = setTimeout(() => {
-      try {
-        pendingCount = applyFilterSet({
-          usePending: true,
-          tab: $activeTab,
-          query: $searchQuery,
-          date: $selectedRange,
-        }).length;
-      } catch (e) {
-        pendingCount = shipmentsData.length;
-      }
-    }, 300);
-  }
+  $effect(() => {
+    if (filtersDialogOpen) {
+      clearTimeout(pendingDebounce);
+      pendingDebounce = setTimeout(() => {
+        try {
+          pendingCount = applyFilterSet({
+            usePending: true,
+            tab: $activeTab,
+            query: $searchQuery,
+            date: $selectedRange,
+          }).length;
+        } catch (e) {
+          pendingCount = shipmentsData.length;
+        }
+      }, 300);
+    }
+  });
 
   // Active (applied) filters used for actual table filtering
   let filterFedEx = false;
@@ -594,7 +212,7 @@
   }
 
   // Helper that applies either active or pending filters
-  function applyFilterSet({ usePending = false, tab, query, date } = {}) {
+  function applyFilterSet({ usePending = false, tab, query, date, data = shipmentsData } = {}) {
     // Determine which set of filters to use (pending or active)
     const use = usePending
       ? {
@@ -620,7 +238,7 @@
           max: filterMaxPrice,
         };
 
-    let filtered = shipmentsData.slice();
+    let filtered = data.slice();
 
     // Tab filter
     if (tab && tab !== 'All') {
@@ -694,16 +312,25 @@
   // Store to trigger updates to filtered shipments
   let filterUpdate = writable(0);
 
-  // Derived filtered shipments now includes applied/active filters
+  // Create a store for shipmentsData so derived stores can react to it
+  let shipmentsDataStore = writable([]);
 
+  // Sync shipmentsData $state with shipmentsDataStore
+  $effect(() => {
+    shipmentsDataStore.set(shipmentsData);
+  });
+
+  // Derived filtered shipments now includes applied/active filters
   const filteredShipments = derived(
-    [activeTab, searchQuery, selectedRange, filterUpdate],
-    ([$activeTab, $searchQuery, $selectedRange]) => {
+    [activeTab, searchQuery, selectedRange, filterUpdate, shipmentsDataStore],
+    ([$activeTab, $searchQuery, $selectedRange, , $shipmentsDataStore]) => {
+      // Use the store data instead of the $state variable
       return applyFilterSet({
         usePending: false,
         tab: $activeTab,
         query: $searchQuery,
         date: $selectedRange,
+        data: $shipmentsDataStore,
       });
     }
   );
@@ -766,34 +393,36 @@
   }
 
   // Debounced pending-count calculation (shows how many results pending filters would return)
-  $: if (
-    $activeTab ||
-    $searchQuery ||
-    $selectedRange ||
-    pFedEx ||
-    pUSPS ||
-    pDHL ||
-    pStandard ||
-    pExpress ||
-    pFreight ||
-    pInternational ||
-    pMinPrice ||
-    pMaxPrice
-  ) {
-    clearTimeout(pendingDebounce);
-    pendingDebounce = setTimeout(() => {
-      try {
-        pendingCount = applyFilterSet({
-          usePending: true,
-          tab: $activeTab,
-          query: $searchQuery,
-          date: $selectedRange,
-        }).length;
-      } catch (e) {
-        pendingCount = shipmentsData.length;
-      }
-    }, 600);
-  }
+  $effect(() => {
+    if (
+      $activeTab ||
+      $searchQuery ||
+      $selectedRange ||
+      pFedEx ||
+      pUSPS ||
+      pDHL ||
+      pStandard ||
+      pExpress ||
+      pFreight ||
+      pInternational ||
+      pMinPrice ||
+      pMaxPrice
+    ) {
+      clearTimeout(pendingDebounce);
+      pendingDebounce = setTimeout(() => {
+        try {
+          pendingCount = applyFilterSet({
+            usePending: true,
+            tab: $activeTab,
+            query: $searchQuery,
+            date: $selectedRange,
+          }).length;
+        } catch (e) {
+          pendingCount = shipmentsData.length;
+        }
+      }, 600);
+    }
+  });
 
   function applyFilters() {
     // copy pending to active
@@ -826,8 +455,9 @@
     filterUpdate.update(n => n + 1);
   }
 
-  $: {
+  $effect(() => {
     // recalc counts based on currently active filters when user searches or changes date range
+    // Also react to shipmentsData changes
     const filtered = applyFilterSet({
       usePending: false,
       tab: 'All',
@@ -835,7 +465,22 @@
       date: $selectedRange,
     });
     updateTabCounts(filtered);
-  }
+  });
+
+  // Update tab counts when shipmentsData loads
+  $effect(() => {
+    if (shipmentsData.length > 0) {
+      const filtered = applyFilterSet({
+        usePending: false,
+        tab: 'All',
+        query: $searchQuery,
+        date: $selectedRange,
+      });
+      updateTabCounts(filtered);
+      // Trigger filter update to refresh derived stores
+      filterUpdate.update(n => n + 1);
+    }
+  });
 
   function clearFilters() {
     // reset pending
@@ -889,7 +534,7 @@
   });
 
   // Ensure currentPage stays within valid bounds when filtered results change
-  $: {
+  $effect(() => {
     const tp = $totalPages || 1;
     if ($currentPage > tp) {
       currentPage.set(tp);
@@ -897,7 +542,7 @@
     if ($currentPage < 1) {
       currentPage.set(1);
     }
-  }
+  });
 
   // ==================== EVENT HANDLERS ====================
 
@@ -1008,12 +653,12 @@
   );
 
   // Export dialog state
-  let exportDialogOpen = false;
-  let exportMyShipmentOnly = false;
-  let exportCarrierDirectOnly = false;
-  let exportIncludeDeleted = false;
-  let exportTimePeriod = 'all'; // all, last7days, last30days, last90days
-  let exportCount = 0;
+  let exportDialogOpen = $state(false);
+  let exportMyShipmentOnly = $state(false);
+  let exportCarrierDirectOnly = $state(false);
+  let exportIncludeDeleted = $state(false);
+  let exportTimePeriod = $state('all'); // all, last7days, last30days, last90days
+  let exportCount = $state(0);
   let exportDebounce = null;
 
   function exportToCSV() {
@@ -1158,15 +803,17 @@
     }, 300);
   }
 
-  $: if (
-    exportDialogOpen ||
-    exportMyShipmentOnly ||
-    exportCarrierDirectOnly ||
-    exportIncludeDeleted ||
-    exportTimePeriod
-  ) {
-    updateExportCount();
-  }
+  $effect(() => {
+    if (
+      exportDialogOpen ||
+      exportMyShipmentOnly ||
+      exportCarrierDirectOnly ||
+      exportIncludeDeleted ||
+      exportTimePeriod
+    ) {
+      updateExportCount();
+    }
+  });
 </script>
 
 <main class="bg-bland-650 h-full">
