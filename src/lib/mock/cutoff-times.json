@@ -1,0 +1,354 @@
+{
+  "Canada": {
+    "M5H 2N2": [
+      {
+        "carrier": "FedEx",
+        "serviceType": "Ground",
+        "cutoffTime": "5:00 PM",
+        "note": "Same-day pickup if booked before cutoff.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "UPS",
+        "serviceType": "Standard",
+        "cutoffTime": "4:30 PM",
+        "note": "Next-day delivery available.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "DHL",
+        "serviceType": "Express",
+        "cutoffTime": "6:00 PM",
+        "note": "International shipping available.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "Canada Post",
+        "serviceType": "Regular",
+        "cutoffTime": "3:00 PM",
+        "note": "Domestic shipping only.",
+        "image": "/assets/images/carrierServices1.png"
+      }
+    ],
+    "V6B 1A1": [
+      {
+        "carrier": "FedEx",
+        "serviceType": "Ground",
+        "cutoffTime": "5:30 PM",
+        "note": "Same-day pickup if booked before cutoff.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "UPS",
+        "serviceType": "Standard",
+        "cutoffTime": "4:00 PM",
+        "note": "Next-day delivery available.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "DHL",
+        "serviceType": "Express",
+        "cutoffTime": "5:45 PM",
+        "note": "International shipping available.",
+        "image": "/assets/images/carrierServices1.png"
+      }
+    ],
+    "H3A 0G4": [
+      {
+        "carrier": "FedEx",
+        "serviceType": "Ground",
+        "cutoffTime": "4:45 PM",
+        "note": "Same-day pickup if booked before cutoff.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "UPS",
+        "serviceType": "Standard",
+        "cutoffTime": "3:30 PM",
+        "note": "Next-day delivery available.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "Canada Post",
+        "serviceType": "Regular",
+        "cutoffTime": "2:30 PM",
+        "note": "Domestic shipping only.",
+        "image": "/assets/images/carrierServices1.png"
+      }
+    ],
+    "T2P 1J4": [
+      {
+        "carrier": "FedEx",
+        "serviceType": "Ground",
+        "cutoffTime": "5:15 PM",
+        "note": "Same-day pickup if booked before cutoff.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "UPS",
+        "serviceType": "Standard",
+        "cutoffTime": "4:15 PM",
+        "note": "Next-day delivery available.",
+        "image": "/assets/images/carrierServices1.png"
+      }
+    ]
+  },
+  "United States": {
+    "10001": [
+      {
+        "carrier": "FedEx",
+        "serviceType": "Overnight",
+        "cutoffTime": "6:00 PM",
+        "note": "Next-day delivery guaranteed.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "UPS",
+        "serviceType": "2-Day Air",
+        "cutoffTime": "5:30 PM",
+        "note": "Two-day delivery service.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "USPS",
+        "serviceType": "Priority",
+        "cutoffTime": "4:00 PM",
+        "note": "Domestic priority mail.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "DHL",
+        "serviceType": "Express",
+        "cutoffTime": "6:30 PM",
+        "note": "International express shipping.",
+        "image": "/assets/images/carrierServices1.png"
+      }
+    ],
+    "90210": [
+      {
+        "carrier": "FedEx",
+        "serviceType": "Overnight",
+        "cutoffTime": "5:45 PM",
+        "note": "Next-day delivery guaranteed.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "UPS",
+        "serviceType": "2-Day Air",
+        "cutoffTime": "5:00 PM",
+        "note": "Two-day delivery service.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "USPS",
+        "serviceType": "Priority",
+        "cutoffTime": "3:30 PM",
+        "note": "Domestic priority mail.",
+        "image": "/assets/images/carrierServices1.png"
+      }
+    ],
+    "33139": [
+      {
+        "carrier": "FedEx",
+        "serviceType": "Overnight",
+        "cutoffTime": "6:15 PM",
+        "note": "Next-day delivery guaranteed.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "UPS",
+        "serviceType": "Ground",
+        "cutoffTime": "4:45 PM",
+        "note": "Ground shipping service.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "USPS",
+        "serviceType": "Priority",
+        "cutoffTime": "3:45 PM",
+        "note": "Domestic priority mail.",
+        "image": "/assets/images/carrierServices1.png"
+      }
+    ]
+  },
+  "United Kingdom": {
+    "SW1A 1AA": [
+      {
+        "carrier": "Royal Mail",
+        "serviceType": "First Class",
+        "cutoffTime": "4:30 PM",
+        "note": "Next-day delivery within UK.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "DHL",
+        "serviceType": "Express",
+        "cutoffTime": "5:00 PM",
+        "note": "International express service.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "DPD",
+        "serviceType": "Standard",
+        "cutoffTime": "3:45 PM",
+        "note": "Standard delivery service.",
+        "image": "/assets/images/carrierServices1.png"
+      }
+    ],
+    "M1 1AA": [
+      {
+        "carrier": "Royal Mail",
+        "serviceType": "First Class",
+        "cutoffTime": "4:00 PM",
+        "note": "Next-day delivery within UK.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "DHL",
+        "serviceType": "Express",
+        "cutoffTime": "5:30 PM",
+        "note": "International express service.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "DPD",
+        "serviceType": "Standard",
+        "cutoffTime": "3:30 PM",
+        "note": "Standard delivery service.",
+        "image": "/assets/images/carrierServices1.png"
+      }
+    ]
+  },
+  "Australia": {
+    "2000": [
+      {
+        "carrier": "Australia Post",
+        "serviceType": "Express",
+        "cutoffTime": "5:00 PM",
+        "note": "Next-business-day delivery.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "DHL",
+        "serviceType": "Express",
+        "cutoffTime": "5:30 PM",
+        "note": "International express service.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "TNT",
+        "serviceType": "Standard",
+        "cutoffTime": "4:00 PM",
+        "note": "Standard delivery service.",
+        "image": "/assets/images/carrierServices1.png"
+      }
+    ],
+    "3000": [
+      {
+        "carrier": "Australia Post",
+        "serviceType": "Express",
+        "cutoffTime": "4:45 PM",
+        "note": "Next-business-day delivery.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "DHL",
+        "serviceType": "Express",
+        "cutoffTime": "5:15 PM",
+        "note": "International express service.",
+        "image": "/assets/images/carrierServices1.png"
+      }
+    ]
+  },
+  "Germany": {
+    "10115": [
+      {
+        "carrier": "DHL",
+        "serviceType": "Express",
+        "cutoffTime": "5:30 PM",
+        "note": "Next-day delivery within Germany.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "DPD",
+        "serviceType": "Standard",
+        "cutoffTime": "4:30 PM",
+        "note": "Standard delivery service.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "FedEx",
+        "serviceType": "International",
+        "cutoffTime": "6:00 PM",
+        "note": "International shipping available.",
+        "image": "/assets/images/carrierServices1.png"
+      }
+    ]
+  },
+  "France": {
+    "75001": [
+      {
+        "carrier": "La Poste",
+        "serviceType": "Chronopost",
+        "cutoffTime": "5:00 PM",
+        "note": "Next-day delivery within France.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "DHL",
+        "serviceType": "Express",
+        "cutoffTime": "5:45 PM",
+        "note": "International express service.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "DPD",
+        "serviceType": "Standard",
+        "cutoffTime": "4:15 PM",
+        "note": "Standard delivery service.",
+        "image": "/assets/images/carrierServices1.png"
+      }
+    ]
+  },
+  "India": {
+    "110001": [
+      {
+        "carrier": "India Post",
+        "serviceType": "Speed Post",
+        "cutoffTime": "4:00 PM",
+        "note": "Next-day delivery in major cities.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "Blue Dart",
+        "serviceType": "Express",
+        "cutoffTime": "5:00 PM",
+        "note": "Express delivery service.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "DHL",
+        "serviceType": "Express",
+        "cutoffTime": "5:30 PM",
+        "note": "International express service.",
+        "image": "/assets/images/carrierServices1.png"
+      }
+    ],
+    "400001": [
+      {
+        "carrier": "India Post",
+        "serviceType": "Speed Post",
+        "cutoffTime": "4:30 PM",
+        "note": "Next-day delivery in major cities.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "Blue Dart",
+        "serviceType": "Express",
+        "cutoffTime": "5:15 PM",
+        "note": "Express delivery service.",
+        "image": "/assets/images/carrierServices1.png"
+      }
+    ]
+  }
+}

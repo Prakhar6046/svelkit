@@ -1,0 +1,766 @@
+{
+  "nav": {
+    "home": "Home",
+    "pricing": "Pricing",
+    "integration": "Integration",
+    "whyShipNFlash": "Why Ship N Flash",
+    "aboutUs": "About Us",
+    "login": "Login",
+    "getStarted": "Get Started",
+    "language": "Language",
+    "english": "English"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Big Discounts, Trusted Carriers.",
+      "description": "Partner with top carriers and access bulk-rate discounts—slash shipping costs by up to 60% without losing reliability.",
+      "saved": "63% Saved",
+      "currentPrice": "$59.85",
+      "originalPrice": "$95.00",
+      "partneredWith": "Partnered With"
+    },
+    "slide2": {
+      "title": "Know Every Step —Always.",
+      "description": "From pickup to drop-off, monitor shipments in real time—get instant updates and keep customers in the loop at every step."
+    },
+    "slide3": {
+      "title": "Insights That Drive Growth",
+      "description": "Analyze costs, carrier performance, and delivery speed—gain insights that cut expenses and improve efficiency with every shipment.",
+      "spending": "Spending",
+      "earning": "Earning",
+      "delivered": "Delivered",
+      "return": "Return"
+    },
+    "slide4": {
+      "title": "Shipping Made Effortless.",
+      "description": "Turn complicated logistics into a smooth two-click process—cut preventable issues by up to 90% while saving time and effort."
+    }
+  },
+  "shippingEstimator": {
+    "title": "Your Shipping Starts Here.",
+    "fromLabel": "From",
+    "fromPlaceholder": "Select origin",
+    "toLabel": "To",
+    "toPlaceholder": "Select destination",
+    "packageTypeLabel": "Package Type",
+    "packageTypePlaceholder": "Select type",
+    "packageWeightLabel": "Package Weight",
+    "packageWeightUnit": "In LBS",
+    "submitButton": "Get Estimate",
+    "bottom": "Free quotes • No commitment • Instant results",
+
+    "result": {
+      "title": "Your Results",
+      "shippingDateLabel": "Shipping Date",
+      "shippingDateValue": "Sep 14, 2025",
+      "serviceLevel": "Service Level",
+      "estTime": "Est. Delivery Time",
+      "priceLabel": "Price",
+      "saveLabel": "Save",
+      "moreLabel": "More",
+      "selectLabel": "Select",
+
+      "note": "Note: Rates are estimates and may change based on package details, surcharges, or address updates. Delivery times are estimates and may be delayed by factors outside the carrier’s control. Taxes included where applicable."
+    },
+    "collapsibleContent": {
+      "cutoffTimeLabel": "Cutoff Time",
+      "rateZoneLabel": "Rate Zone",
+      "billableWeightLabel": "Billable Weight",
+      "currencyCodeLabel": "Currency Code",
+      "trackingLabel": "Tracking",
+      "pickupAvailableLabel": "Pickup Available",
+      "pickupFeeLabel": "Pickup Fee",
+      "baseRateLabel": "Base Rate",
+      "fuelSurchargeLabel": "Fuel Surcharge",
+      "totalCostLabel": "Total Cost"
+    }
+  },
+  "shippingMadeEasy": {
+    "title": "Shipping Made Easy Everyone",
+    "description": "No matter how often you ship or how big your business grows, our platform flexes with you.",
+    "startShippingToday": "Start Shipping Today",
+    "oneTimeShippers": "One-Time Shippers",
+    "oneTimeShippersDesc": "Send a package anytime without the setup or complexity. Just enter the details, get the best rate, and your package is on its way—simple, quick, and reliable every single time.",
+    "growingBusiness": "Growing Business",
+    "growingBusinessDesc": "Send a package anytime without the setup or complexity. Just enter the details, get the best rate, and your package is on its way—simple, quick, and reliable every single time.",
+    "ecommerce": "E-commerce",
+    "ecommerceDesc": "Send a package anytime without the setup or complexity. Just enter the details, get the best rate, and your package is on its way—simple, quick, and reliable every single time.",
+    "proShippers": "Pro Shippers",
+    "proShippersDesc": "Send a package anytime without the setup or complexity. Just enter the details, get the best rate, and your package is on its way—simple, quick, and reliable every single time.",
+    "enterprises": "Enterprises",
+    "enterprisesDesc": "Send a package anytime without the setup or complexity. Just enter the details, get the best rate, and your package is on its way—simple, quick, and reliable every single time."
+  },
+  "shippingPlaces": {
+    "title": "Ship Anywhere With Ease",
+    "description": "Simple, affordable solutions for Canada, US, and worldwide shipping.",
+    "canadaShipping": {
+      "title": "Canada Shipping",
+      "description": "Deliver across Canada with ease. Access trusted carriers at discounted rates and reach customers coast-to-coast with fast, reliable service. Real-time tracking and smooth delivery make every shipment stress-free."
+    },
+    "usShipping": {
+      "title": "US Shipping",
+      "description": "Make cross-border shipping simple. Get the best discounted carrier rates, seamless customs handling, and predictable delivery times. Expand into the U.S. market with confidence and reliability."
+    },
+    "internationalShipping": {
+      "title": "International Shipping",
+      "description": "Go global without the hassle. Ship to 200+ countries with competitive rates, paperless customs, and real-time tracking. Expand your reach worldwide with smooth, secure, and affordable delivery."
+    }
+  },
+  "fourSteps": {
+    "title": "Ship Smarter in Just 4 Steps",
+    "description": "From packing to delivery, we make every step effortless.",
+    "step1": {
+      "title": "Pack Your Shipment",
+      "description": "Secure your items with proper packaging for safe delivery."
+    },
+    "step2": {
+      "title": "Compare & Choose",
+      "description": "Instantly view discounted carrier options and choose your best fit."
+    },
+    "step3": {
+      "title": "Print & Get Ready",
+      "description": "Print labels in seconds, attach them, and get your package ready."
+    },
+    "step4": {
+      "title": "Ship & Track",
+      "description": "Schedule pickup or drop off, then track your delivery in real time."
+    },
+    "getStarted": "Get Started"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "The most common questions answered — no confusion, no hidden surprises.",
+    "question1": "Are the prices shown final, or will there be extra fees?",
+    "answer1": "Absolutely. The price you see is the final price — all taxes and surcharges are included upfront. No hidden surprises, no guesswork. You can book with confidence knowing exactly what you'll pay.",
+    "question2": "Why are your rates cheaper than booking directly with carriers?",
+    "answer2": "Send a package anytime without the setup or complexity. Just enter the details, get the best rate, and your package is on its way—simple, quick, and reliable every single time.",
+    "question3": "How do I schedule a pickup?",
+    "answer3": "Send a package anytime without the setup or complexity. Just enter the details, get the best rate, and your package is on its way—simple, quick, and reliable every single time.",
+    "question4": "What happens if the driver doesn't show up?",
+    "answer4": "Send a package anytime without the setup or complexity. Just enter the details, get the best rate, and your package is on its way—simple, quick, and reliable every single time.",
+    "question5": "How can I contact support?",
+    "answer5": "Send a package anytime without the setup or complexity. Just enter the details, get the best rate, and your package is on its way—simple, quick, and reliable every single time."
+  },
+  "cta": {
+    "title": "Ready to Ship Smarter?",
+    "description": "Save up to 70% with the all-in-one shipping platform trusted by 10K+.",
+    "getStarted": "Get Started"
+  },
+  "common": {
+    "step": "step",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "reset": "Reset",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "view": "View",
+    "download": "Download",
+    "upload": "Upload",
+    "print": "Print",
+    "share": "Share",
+    "copy": "Copy",
+    "paste": "Paste",
+    "cut": "Cut",
+    "undo": "Undo",
+    "redo": "Redo"
+  },
+  "error404": {
+    "title": "Page Not Found",
+    "description": "Sorry, we couldn't find the page you're looking for. It might have been moved, deleted, or you may have entered the wrong URL.",
+    "requestedPath": "Requested path",
+    "goHome": "Go Home",
+    "viewPricing": "View Pricing",
+    "helpTitle": "Need Help?",
+    "commonCauses": {
+      "title": "Common Causes",
+      "typo": "Typo in the URL",
+      "moved": "Page was moved or renamed",
+      "deleted": "Page was deleted"
+    },
+    "whatToDo": {
+      "title": "What You Can Do",
+      "checkUrl": "Check the URL for typos",
+      "useNavigation": "Use the navigation menu",
+      "contactSupport": "Contact our support team"
+    },
+    "stillNeedHelp": "Still need help?",
+    "contactSupport": "Contact Support"
+  },
+  "about": {
+    "shippingPage": {
+      "header": {
+        "title": "Shipping.CA",
+        "subtitle": "Built for Shippers, Trusted by Businesses"
+      },
+      "ourStory": {
+        "title": "Our Story",
+        "description": "We started with one goal: to make shipping simple, affordable, and reliable for everyone. From one-time shippers to global enterprises, we’ve grown into a trusted partner by combining industry-leading carriers, powerful technology, and dedicated customer support. Today, we help thousands of businesses ship smarter every single day."
+      },
+      "ourMission": {
+        "title": "Our Mission",
+        "description": "To empower businesses and individuals with stress-free, transparent, and affordable shipping solutions."
+      },
+      "ourVision": {
+        "title": "Our Core Vision",
+        "description": "To empower businesses and individuals with stress-free, transparent, and affordable shipping solutions."
+      },
+      "coreValues": [
+        {
+          "title": "Reliability",
+          "description": "Delivering on time, every time."
+        },
+        {
+          "title": "Simplicity",
+          "description": "Removing the hassle from logistics."
+        },
+        {
+          "title": "Trust",
+          "description": "Secure shipping with top carriers."
+        },
+        {
+          "title": "Smart Technology",
+          "description": "Faster, more efficient, cost-saving tech."
+        }
+      ],
+      "trustedBy": {
+        "subtitle": "Trusted by the Best"
+      },
+      "team": {
+        "title": "The People Behind the Platform",
+        "subtitle": "A passionate team dedicated to redefining the way you ship",
+        "members": [
+          {
+            "name": "John Dow",
+            "role": "Founder"
+          },
+          {
+            "name": "John Dow",
+            "role": "Founder"
+          },
+          {
+            "name": "John Dow",
+            "role": "Founder"
+          },
+          {
+            "name": "John Dow",
+            "role": "Founder"
+          },
+          {
+            "name": "John Dow",
+            "role": "Founder"
+          },
+          {
+            "name": "John Dow",
+            "role": "Founder"
+          },
+          {
+            "name": "John Dow",
+            "role": "Founder"
+          },
+          {
+            "name": "John Dow",
+            "role": "Founder"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Ready to Ship Smarter?",
+        "description": "Save up to 70% with the all-in-one shipping platform trusted by 10K+."
+      },
+      "ctaButton": "Get Started Free"
+    }
+  },
+  "pricing": {
+    "pricingPage": {
+      "hero": {
+        "title": "Save Big on Every Shipment",
+        "subtitle": "Unlock up to <strong>70% savings</strong> with discounted carrier rates. No monthly fees. No commitments. Just simple, transparent pricing.",
+        "button": "Sign up free to see live rates"
+      },
+      "savingsCards": [
+        {
+          "label": "67% Saved",
+          "price": "$63.65"
+        },
+        {
+          "label": "63% Saved",
+          "price": "$59.85"
+        },
+        {
+          "label": "53% Saved",
+          "price": "$49.85"
+        }
+      ],
+      "pricingTable": {
+        "heading": "See How Much You’ll Save",
+        "subHeading": "See how our discounted prices beat retail shipping rates for instant savings.",
+        "tabs": {
+          "canada": [
+            {
+              "carrier": "Canada Post",
+              "retailRate": "$14.50",
+              "ourRate": "$6.24",
+              "youSave": "43%"
+            },
+            {
+              "carrier": "DHL",
+              "retailRate": "$19.75",
+              "ourRate": "$10.27",
+              "youSave": "52%"
+            },
+            {
+              "carrier": "UPS",
+              "retailRate": "$21.00",
+              "ourRate": "$12.80",
+              "youSave": "61%"
+            },
+            {
+              "carrier": "FedEx",
+              "retailRate": "$20.25",
+              "ourRate": "$13.16",
+              "youSave": "65%"
+            }
+          ],
+          "us": "US tab content",
+          "international": "International tab content"
+        },
+        "ctaButton": "Start Shipping to Canada"
+      },
+      "estimator": {
+        "heading": "Estimate Your Cost in Seconds",
+        "subHeading": "Enter your shipping details to see instant discounted estimates."
+      },
+      "whyShippers": {
+        "heading": "Why Shippers Choose Us",
+        "subHeading": "Because shipping should be simple, affordable, and built to scale—without the headaches.",
+        "features": [
+          {
+            "title": "Save Big Everytime",
+            "description": "Access discounted carrier rates with savings up to 70% off retail prices—no minimums required.",
+            "icon": "Dollar"
+          },
+          {
+            "title": "Simplicity That Works",
+            "description": "Intuitive platform that gets you shipping fast—no complex setup or learning curve needed.",
+            "icon": "Lightning"
+          },
+          {
+            "title": "Insights That Matter",
+            "description": "Real-time tracking, delivery confirmations, and analytics to optimize your shipping strategy.",
+            "icon": "Dashboard"
+          },
+          {
+            "title": "Ready To Scale",
+            "description": "From single packages to enterprise volumes—our platform grows with your business needs.",
+            "icon": "Globe"
+          }
+        ]
+      },
+      "ctaSection": {
+        "heading": "Ready to Ship Smarter?",
+        "subHeading": "Save up to 70% with the all-in-one shipping platform trusted by 10K+.",
+        "button": "Get Started"
+      }
+    }
+  },
+  "helpCenter": {
+    "hero": {
+      "title": "Your Shipping Guide",
+      "subtitle": "Step-by-step help, anytime you need it - for smarter shipping."
+    },
+    "categories": {
+      "subtitle": "Select a category to find quick, detailed answers.",
+      "cards": [
+        {
+          "icon": "../../../public/assets/images/help-ic-1.svg",
+          "title": "Shipping & Delivery",
+          "description": "Everything you need to know about sending, receiving, and tracking your shipments.",
+          "cta": "Explore"
+        },
+        {
+          "icon": "../../../public/assets/images/help-ic-2.svg",
+          "title": "Returns & Compliance",
+          "description": "Guidelines for handling returns and ensuring your shipments follow shipping laws.",
+          "cta": "Explore"
+        },
+        {
+          "icon": "../../../public/assets/images/help-ic-3.svg",
+          "title": "Printing & Tools",
+          "description": "Learn how to print postage and use our smart integrations to save time.",
+          "cta": "Explore"
+        },
+        {
+          "icon": "../../../public/assets/images/help-ic-4.svg",
+          "title": "Billing & Account",
+          "description": "Manage payments, account settings, and security with ease.",
+          "cta": "Explore"
+        },
+        {
+          "icon": "../../../public/assets/images/help-ic-5.svg",
+          "title": "Support & Troubleshooting",
+          "description": "Quick fixes for common issues and how to get help when you need it.",
+          "cta": "Explore"
+        },
+        {
+          "icon": "../../../public/assets/images/help-ic-6.svg",
+          "title": "Getting Shipments to Us",
+          "description": "Different ways to hand off your parcels — whichever is most convenient.",
+          "cta": "Explore"
+        }
+      ]
+    },
+    "breadcrumbs": [
+      {
+        "label": "Help Center",
+        "link": "/"
+      },
+      {
+        "label": "Shipping & Delivery",
+        "link": "/help-center"
+      },
+      {
+        "label": "Services & Fees"
+      }
+    ],
+    "shippingDelivery": {
+      "title": "Shipping & Delivery",
+      "subtitle": "Everything you need to know about sending, receiving, and tracking your shipments."
+    },
+    "tabs": [
+      {
+        "value": "services",
+        "label": "Services & Fees",
+        "content": {
+          "title": "Services & Fees",
+          "body": "Learn about the shipping services we offer, how pricing is calculated, and what fees to expect—so you always know the cost upfront.",
+          "subTabs": [
+            {
+              "value": "services",
+              "label": "What services do you offer?",
+              "title": "What services do you offer?",
+              "body": "We make shipping simple by offering a wide range of delivery solutions designed for every kind of shipper. Whether you’re sending a single package or managing thousands of orders, we’ve got you covered.<ul><li>Domestic Shipping – Fast, coast-to-coast delivery across Canada with trusted carriers.</li><li>Cross-Border Shipping – Hassle-free U.S. deliveries with discounted rates and smooth customs handling.</li><li>International Shipping – Reach 200+ countries worldwide with real-time tracking and paperless customs forms.</li><li>Business Solutions – Tools for e-commerce, bulk shippers, and enterprises to automate workflows and save costs.</li></ul><p>No matter the size of your shipment, you’ll always get reliable delivery, transparent rates, and full tracking from start to finish.</p>"
+            },
+            {
+              "value": "calculated",
+              "label": "How are fees calculated?",
+              "title": "How are fees calculated?",
+              "body": "Our fees are calculated based on weight, dimensions, destination, and selected shipping options. All rates are displayed upfront."
+            },
+            {
+              "value": "charges",
+              "label": "Are there hidden charges?",
+              "title": "Are there hidden charges?",
+              "body": "No hidden charges. The total cost includes all fees associated with your shipment."
+            }
+          ]
+        }
+      },
+      {
+        "value": "postage-types",
+        "label": "Postage Types",
+        "content": {
+          "title": "Postage Types",
+          "body": "Content for Postage Types"
+        }
+      },
+      {
+        "value": "creating-shipments",
+        "label": "Creating Shipments",
+        "content": {
+          "title": "Creating Shipments",
+          "body": "Content for Creating Shipments"
+        }
+      },
+      {
+        "value": "preparing-shipments",
+        "label": "Preparing Shipments",
+        "content": {
+          "title": "Preparing Shipments",
+          "body": "Content for Preparing Shipments"
+        }
+      },
+      {
+        "value": "delivery-times",
+        "label": "Delivery Times & Tracking",
+        "content": {
+          "title": "Delivery Times & Tracking",
+          "body": "Content for Delivery Times & Tracking"
+        }
+      },
+      {
+        "value": "wheres-my-shipment",
+        "label": "Where’s My Shipment?",
+        "content": {
+          "title": "Where’s My Shipment?",
+          "body": "Content for Where’s My Shipment?"
+        }
+      },
+      {
+        "value": "delayed-shipments",
+        "label": "Delayed Shipments",
+        "content": {
+          "title": "Delayed Shipments",
+          "body": "Content for Delayed Shipments"
+        }
+      }
+    ],
+    "cta": {
+      "title": "That’s All the Help You’ll Need.",
+      "subtitle": "Join thousands of businesses today, and let’s get your shipping running smoothly.",
+      "button": "Get Started"
+    }
+  },
+  "shipTrack": {
+    "hero": {
+      "title": "Ship. Track. Done.",
+      "subtitle": "Instant estimates and real-time tracking—simple and reliable."
+    },
+    "tabs": {
+      "estimate": "Estimate",
+      "tracking": "Tracking"
+    },
+    "cta": {
+      "title": "Ship Smarter. Save More.",
+      "subtitle": "Unlock exclusive discounted rates and faster processing—start shipping better today.",
+      "button": "Get Started"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Fast. Affordable. Borderless.",
+      "subtitle": "Effortless logistics for Canada, US, and worldwide—Your shipments, your way."
+    },
+    "canada": {
+      "title": "Canada Shipping Made Simple",
+      "subtitle": "Ship coast-to-coast with trusted carriers and discounted rates designed for individuals and businesses.",
+      "description1": "Whether you're sending a one-time package or fulfilling daily orders, our Canadian shipping solutions cover every province and territory. Enjoy transparent pricing, faster delivery options, and the flexibility to ship on your terms.",
+      "description2": "With access to top carriers like Canada Post, Purolator, DHL, and FedEx, you get reliability, speed, and the best rates—all in one platform.",
+      "button": "Get Your Estimate",
+      "cards": {
+        "nationwide": {
+          "title": "Nationwide Coverage",
+          "description": "Ship seamlessly from urban centers to remote areas across Canada.",
+          "alt": "Maple Leaf Icon"
+        },
+        "rates": {
+          "title": "Best Rates, Always",
+          "description": "Save up to 70% with our exclusive carrier discounts, giving you the best value on every shipment.",
+          "alt": "Rate Icon"
+        },
+        "tracking": {
+          "title": "Real-Time Tracking",
+          "description": "Track every shipment in real-time with all carriers, anytime, wherever you are.",
+          "alt": "Tracking Icon"
+        },
+        "flexible": {
+          "title": "Flexible Pick & Drop",
+          "description": "Enjoy the flexibility of free pickups right at your door or drop-off at convenient nearby locations.",
+          "alt": "Truck Icon"
+        }
+      }
+    },
+    "us": {
+      "title": "Hassle-Free U.S. Shipping",
+      "subtitle": "Cross the border with confidence—fast, affordable, and simple.",
+      "description1": "Send packages across the border with ease. We simplify the entire US shipping process—from generating customs forms to securing the best rates—so you can ship like it’s local.",
+      "description2": "With access to discounted rates from USPS, UPS, DHL, FedEx, and other leading carriers, you’ll save more while ensuring reliable delivery across all 50 states.",
+      "button": "Get Your Estimate",
+      "cards": {
+        "automated": {
+          "title": "Automated Customs",
+          "description": "Streamlined cross-border process with automated customs forms.",
+          "alt": "Automated Customs Icon"
+        },
+        "discounts": {
+          "title": "Exclusive Discounts",
+          "description": "Save big with exclusive discounts from trusted U.S. carriers.",
+          "alt": "Discount Icon"
+        },
+        "fastest": {
+          "title": "Fastest Delivery",
+          "description": "Reach all 50 states quickly with reliable transit times.",
+          "alt": "Truck Icon"
+        },
+        "tracking": {
+          "title": "End-to-end Tracking",
+          "description": "Stay informed with real-time shipment tracking.",
+          "alt": "Tracking Icon"
+        }
+      }
+    },
+    "global": {
+      "title": "Effortless Global Shipping",
+      "subtitle": "Ship to 200+ countries with full customs support.",
+      "description1": "Expand your reach worldwide with international shipping that handles the hard parts for you. We take care of customs documents, compliance, and courier selection so your packages move smoothly across borders.",
+      "description2": "Through our global partners, enjoy competitive pricing and reliable delivery—whether you’re sending a single package or scaling a business internationally.",
+      "button": "Get Your Estimate",
+      "cards": {
+        "paperless": {
+          "title": "Paperless customs",
+          "description": "Generate and submit documents automatically.",
+          "alt": "Automated Customs Icon"
+        },
+        "couriers": {
+          "title": "Global couriers",
+          "description": "Ship worldwide with reliable, trusted partners.",
+          "alt": "Globe Icon"
+        },
+        "rates": {
+          "title": "Lower rates",
+          "description": "Access discounted pricing for international deliveries.",
+          "alt": "Rate Icon"
+        },
+        "tracking": {
+          "title": "Worldwide tracking",
+          "description": "Monitor shipments in real time, anywhere.",
+          "alt": "Tracking Icon"
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Ship Smarter?",
+      "subtitle": "Save up to 70% with the all-in-one shipping platform trusted by 10K+.",
+      "button": "Get Started"
+    }
+  },
+  "support": {
+    "hero": {
+      "title": "Here To Help",
+      "subtitle": "Find solutions instantly, or connect with support in just one click."
+    },
+    "cards": {
+      "liveChat": {
+        "title": "Live Chat",
+        "description": "Get instant help from our team in real time.",
+        "link": "Start Live Chat",
+        "alt": "Reliability Icon"
+      },
+      "email": {
+        "title": "Email Support",
+        "description": "Send us your question—fast replies, always.",
+        "link": "Contact Email",
+        "alt": "Simplicity Icon"
+      },
+      "helpCenter": {
+        "title": "Help Center",
+        "description": "Find step-by-step guides and FAQs anytime.",
+        "link": "Visit Help Center",
+        "alt": "Trust Icon"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Quick answers across the topics that matter most.",
+      "tabs": {
+        "shipping": "Shipping",
+        "returns": "Returns",
+        "tracking": "Tracking",
+        "billing": "Billing"
+      },
+      "accordion": {
+        "item1": {
+          "question": "How long does international shipping take?",
+          "answer": "Delivery times vary depending on the destination and carrier, but most international shipments arrive within 7–14 business days. At checkout, you’ll see an estimated delivery window for your chosen service."
+        },
+        "item2": {
+          "question": "Can I change the shipping address after I've placed an order?",
+          "answer": "Send a package anytime without the setup or complexity. Just enter the details, get the best rate, and your package is on its way—simple, quick, and reliable every single time."
+        },
+        "item3": {
+          "question": "What are the available shipping options and costs?",
+          "answer": "Send a package anytime without the setup or complexity. Just enter the details, get the best rate, and your package is on its way—simple, quick, and reliable every single time."
+        }
+      }
+    },
+    "emailSupport": {
+      "title": "Dedicated Email Support",
+      "subtitle": "Quick, friendly replies—straight to your inbox.",
+      "form": {
+        "fullName": "Full Name",
+        "fullNamePlaceholder": "Your Full Name",
+        "email": "Email Address",
+        "emailPlaceholder": "Your Email",
+        "message": "Message",
+        "messagePlaceholder": "Describe your issue or question…",
+        "submit": "Send Message"
+      },
+      "info": {
+        "question": "Got a question or need extra help?",
+        "instructions": "Just fill out the form and our support team will get back to you shortly. We usually reply within 2–4 working hrs.",
+        "liveChat": "Need it fast? Try Live Chat."
+      }
+    },
+    "cta": {
+      "title": "That’s All the Help You’ll Need.",
+      "subtitle": "Join thousands of businesses today, and let’s get your shipping running smoothly.",
+      "button": "Get Started"
+    }
+  },
+
+  "ship": {
+    "hero": {
+      "title": "Ship & Return With Ease",
+      "subtitle": "Simple, fast, and affordable shipping and returns, anywhere in the world."
+    },
+    "steps": {
+      "title": "How to Ship in - 4 Easy Steps",
+      "subtitle": "Create, label, drop off, and track—shipping has never been easier.",
+      "createAccount": {
+        "title": "Create Account",
+        "description": "Sign up in just a few minutes and unlock access to exclusive discounted shipping rates. No hidden fees, no long setup—just a fast way to start shipping smarter.",
+        "alt": "Create Account"
+      },
+      "printLabel": {
+        "title": "Print Label",
+        "description": "Simply enter your shipment details, compare carrier options, and print your label right from your home or office. Save time and money without waiting in line.",
+        "alt": "Print Label"
+      },
+      "dropOff": {
+        "title": "Drop Off or Schedule Pickup",
+        "description": "Ship your way—drop your package at a nearby partner location, or request a free pickup straight from your doorstep. Flexible options designed to fit your schedule.",
+        "alt": "Drop Off or Pickup"
+      },
+      "track": {
+        "title": "Track Your Shipment",
+        "description": "Follow every step of your shipment’s journey with real-time updates. From the moment it leaves your hands to final delivery, you’ll always know where it is.",
+        "alt": "Track Shipment"
+      }
+    },
+    "returns": {
+      "title": "Easy, Flexible Returns",
+      "subtitle": "Hassle-free options for you and your customers.",
+      "prepare": {
+        "title": "Prepare your return",
+        "description": "Secure your items with proper packaging for safe delivery.",
+        "alt": "Prepare Return"
+      },
+      "submit": {
+        "title": "Submit Return Request",
+        "description": "Request your return directly through your dashboard with just a few clicks.",
+        "alt": "Submit Return"
+      },
+      "pickup": {
+        "title": "Pick Up or Drop Off",
+        "description": "Collect your return from one of our GTA branches, or choose the option that works best for you.",
+        "alt": "Pick Up or Drop Off"
+      },
+      "cta": "Get Started"
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Create your free account and let’s get started shipping.",
+      "button": "Start Shipping Today"
+    }
+  }
+}

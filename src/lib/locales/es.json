@@ -1,0 +1,726 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "pricing": "Precios",
+    "integration": "Integración",
+    "whyShipNFlash": "Por qué Ship N Flash",
+    "aboutUs": "Acerca de Nosotros",
+    "login": "Iniciar Sesión",
+    "getStarted": "Comenzar",
+    "language": "Idioma",
+    "english": "Inglés"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Grandes Descuentos, Transportistas de Confianza.",
+      "description": "Asóciate con los mejores transportistas y accede a descuentos por volumen—reduce los costos de envío hasta un 60% sin perder confiabilidad.",
+      "saved": "63% Ahorrado",
+      "currentPrice": "$59.85",
+      "originalPrice": "$95.00",
+      "partneredWith": "Asociado Con"
+    },
+    "slide2": {
+      "title": "Conoce Cada Paso —Siempre.",
+      "description": "Desde la recogida hasta la entrega, monitorea los envíos en tiempo real—obtén actualizaciones instantáneas y mantén a los clientes informados en cada paso."
+    },
+    "slide3": {
+      "title": "Insights Que Impulsan el Crecimiento",
+      "description": "Analiza costos, rendimiento de transportistas y velocidad de entrega—obtén insights que reducen gastos y mejoran la eficiencia con cada envío.",
+      "spending": "Gastando",
+      "earning": "Ganando",
+      "delivered": "Entregado",
+      "return": "Devolución"
+    },
+    "slide4": {
+      "title": "Envíos Sin Esfuerzo.",
+      "description": "Convierte la logística complicada en un proceso fluido de dos clics—reduce problemas prevenibles hasta un 90% mientras ahorras tiempo y esfuerzo."
+    }
+  },
+  "shippingMadeEasy": {
+    "title": "Envíos Fáciles para Todos",
+    "description": "No importa qué tan seguido envíes o qué tan grande crezca tu negocio, nuestra plataforma se adapta contigo.",
+    "startShippingToday": "Comienza a Enviar Hoy",
+    "oneTimeShippers": "Enviadores Ocasionales",
+    "oneTimeShippersDesc": "Envía un paquete en cualquier momento sin la configuración o complejidad. Solo ingresa los detalles, obtén la mejor tarifa, y tu paquete está en camino—simple, rápido y confiable cada vez.",
+    "growingBusiness": "Negocio en Crecimiento",
+    "growingBusinessDesc": "Envía un paquete en cualquier momento sin la configuración o complejidad. Solo ingresa los detalles, obtén la mejor tarifa, y tu paquete está en camino—simple, rápido y confiable cada vez.",
+    "ecommerce": "Comercio Electrónico",
+    "ecommerceDesc": "Envía un paquete en cualquier momento sin la configuración o complejidad. Solo ingresa los detalles, obtén la mejor tarifa, y tu paquete está en camino—simple, rápido y confiable cada vez.",
+    "proShippers": "Enviadores Profesionales",
+    "proShippersDesc": "Envía un paquete en cualquier momento sin la configuración o complejidad. Solo ingresa los detalles, obtén la mejor tarifa, y tu paquete está en camino—simple, rápido y confiable cada vez.",
+    "enterprises": "Empresas",
+    "enterprisesDesc": "Envía un paquete en cualquier momento sin la configuración o complejidad. Solo ingresa los detalles, obtén la mejor tarifa, y tu paquete está en camino—simple, rápido y confiable cada vez."
+  },
+  "shippingPlaces": {
+    "title": "Envía a Cualquier Lugar con Facilidad",
+    "description": "Soluciones simples y asequibles para envíos a Canadá, Estados Unidos y mundialmente.",
+    "canadaShipping": {
+      "title": "Envíos a Canadá",
+      "description": "Entrega por todo Canadá con facilidad. Accede a transportistas confiables con tarifas con descuento y llega a clientes de costa a costa con servicio rápido y confiable. Seguimiento en tiempo real y entrega fluida hacen cada envío sin estrés."
+    },
+    "usShipping": {
+      "title": "Envíos a Estados Unidos",
+      "description": "Haz que el envío transfronterizo sea simple. Obtén las mejores tarifas de transportistas con descuento, manejo fluido de aduanas y tiempos de entrega predecibles. Expande al mercado estadounidense con confianza y confiabilidad."
+    },
+    "internationalShipping": {
+      "title": "Envíos Internacionales",
+      "description": "Ve global sin complicaciones. Envía a más de 200 países con tarifas competitivas, aduanas sin papel y seguimiento en tiempo real. Expande tu alcance mundialmente con entrega fluida, segura y asequible."
+    }
+  },
+  "fourSteps": {
+    "title": "Envía Más Inteligente en Solo 4 Pasos",
+    "description": "Desde el empaque hasta la entrega, hacemos cada paso sin esfuerzo.",
+    "step1": {
+      "title": "Empaca Tu Envío",
+      "description": "Asegura tus artículos con empaque adecuado para entrega segura."
+    },
+    "step2": {
+      "title": "Compara y Elige",
+      "description": "Ve instantáneamente las opciones de transportistas con descuento y elige la que mejor te convenga."
+    },
+    "step3": {
+      "title": "Imprime y Prepárate",
+      "description": "Imprime etiquetas en segundos, adjúntalas y prepara tu paquete."
+    },
+    "step4": {
+      "title": "Envía y Rastrea",
+      "description": "Programa recogida o entrega, luego rastrea tu entrega en tiempo real."
+    },
+    "getStarted": "Comenzar"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "description": "Las preguntas más comunes respondidas — sin confusión, sin sorpresas ocultas.",
+    "question1": "¿Los precios mostrados son finales, o habrá tarifas adicionales?",
+    "answer1": "Absolutamente. El precio que ves es el precio final — todos los impuestos y recargos están incluidos por adelantado. Sin sorpresas ocultas, sin conjeturas. Puedes reservar con confianza sabiendo exactamente lo que pagarás.",
+    "question2": "¿Por qué sus tarifas son más baratas que reservar directamente con los transportistas?",
+    "answer2": "Envía un paquete en cualquier momento sin la configuración o complejidad. Solo ingresa los detalles, obtén la mejor tarifa, y tu paquete está en camino—simple, rápido y confiable cada vez.",
+    "question3": "¿Cómo programo una recogida?",
+    "answer3": "Envía un paquete en cualquier momento sin la configuración o complejidad. Solo ingresa los detalles, obtén la mejor tarifa, y tu paquete está en camino—simple, rápido y confiable cada vez.",
+    "question4": "¿Qué pasa si el conductor no se presenta?",
+    "answer4": "Envía un paquete en cualquier momento sin la configuración o complejidad. Solo ingresa los detalles, obtén la mejor tarifa, y tu paquete está en camino—simple, rápido y confiable cada vez.",
+    "question5": "¿Cómo puedo contactar soporte?",
+    "answer5": "Envía un paquete en cualquier momento sin la configuración o complejidad. Solo ingresa los detalles, obtén la mejor tarifa, y tu paquete está en camino—simple, rápido y confiable cada vez."
+  },
+  "cta": {
+    "title": "¿Listo para Enviar Más Inteligente?",
+    "description": "Ahorra hasta 70% con la plataforma de envíos todo-en-uno confiada por más de 10K+.",
+    "getStarted": "Comenzar"
+  },
+  "common": {
+    "step": "paso",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "close": "Cerrar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "submit": "Enviar",
+    "reset": "Restablecer",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "view": "Ver",
+    "download": "Descargar",
+    "upload": "Subir",
+    "print": "Imprimir",
+    "share": "Compartir",
+    "copy": "Copiar",
+    "paste": "Pegar",
+    "cut": "Cortar",
+    "undo": "Deshacer",
+    "redo": "Rehacer"
+  },
+  "error404": {
+    "title": "Página No Encontrada",
+    "description": "Lo sentimos, no pudimos encontrar la página que buscas. Puede haber sido movida, eliminada, o quizás ingresaste una URL incorrecta.",
+    "requestedPath": "Ruta solicitada",
+    "goHome": "Ir al Inicio",
+    "viewPricing": "Ver Precios",
+    "helpTitle": "¿Necesitas Ayuda?",
+    "commonCauses": {
+      "title": "Causas Comunes",
+      "typo": "Error tipográfico en la URL",
+      "moved": "La página fue movida o renombrada",
+      "deleted": "La página fue eliminada"
+    },
+    "whatToDo": {
+      "title": "Qué Puedes Hacer",
+      "checkUrl": "Verifica la URL por errores tipográficos",
+      "useNavigation": "Usa el menú de navegación",
+      "contactSupport": "Contacta a nuestro equipo de soporte"
+    },
+    "stillNeedHelp": "¿Aún necesitas ayuda?",
+    "contactSupport": "Contactar Soporte"
+  },
+  "about": {
+    "shippingPage": {
+      "header": {
+        "title": "Shipping.CA",
+        "subtitle": "Construido para remitentes, confiable para negocios"
+      },
+      "ourStory": {
+        "title": "Nuestra Historia",
+        "description": "Comenzamos con un objetivo: hacer que el envío sea simple, asequible y confiable para todos. Desde remitentes ocasionales hasta empresas globales, nos hemos convertido en un socio confiable combinando transportistas líderes, tecnología poderosa y soporte al cliente dedicado. Hoy, ayudamos a miles de empresas a enviar de manera más inteligente cada día."
+      },
+      "ourMission": {
+        "title": "Nuestra Misión",
+        "description": "Empoderar a empresas e individuos con soluciones de envío sin estrés, transparentes y asequibles."
+      },
+      "ourVision": {
+        "title": "Nuestra Visión Central",
+        "description": "Empoderar a empresas e individuos con soluciones de envío sin estrés, transparentes y asequibles."
+      },
+      "coreValues": [
+        {
+          "title": "Confiabilidad",
+          "description": "Entregando a tiempo, siempre."
+        },
+        {
+          "title": "Simplicidad",
+          "description": "Eliminando complicaciones de la logística."
+        },
+        {
+          "title": "Confianza",
+          "description": "Envíos seguros con transportistas de primera."
+        },
+        {
+          "title": "Tecnología Inteligente",
+          "description": "Más rápido, más eficiente y rentable."
+        }
+      ],
+      "trustedBy": {
+        "subtitle": "Confiado por los mejores"
+      },
+      "team": {
+        "title": "Las Personas Detrás de la Plataforma",
+        "subtitle": "Un equipo apasionado dedicado a redefinir la manera en que envías",
+        "members": [
+          {
+            "name": "John Dow",
+            "role": "Fundador"
+          },
+          {
+            "name": "John Dow",
+            "role": "Fundador"
+          },
+          {
+            "name": "John Dow",
+            "role": "Fundador"
+          },
+          {
+            "name": "John Dow",
+            "role": "Fundador"
+          },
+          {
+            "name": "John Dow",
+            "role": "Fundador"
+          },
+          {
+            "name": "John Dow",
+            "role": "Fundador"
+          },
+          {
+            "name": "John Dow",
+            "role": "Fundador"
+          },
+          {
+            "name": "John Dow",
+            "role": "Fundador"
+          }
+        ]
+      },
+      "cta": {
+        "title": "¿Listo para enviar de manera más inteligente?",
+        "description": "Ahorra hasta un 70% con la plataforma de envío todo en uno confiable por más de 10K+."
+      },
+      "ctaButton": "Comenzar Gratis"
+    }
+  },
+  "pricing": {
+    "pricingPage": {
+      "hero": {
+        "title": "Ahorra en cada envío",
+        "subtitle": "Ahorra hasta un <strong>70%</strong> con tarifas de transportistas con descuento. Sin cuotas mensuales. Sin compromisos. Solo precios simples y transparentes.",
+        "button": "Regístrate gratis para ver tarifas en vivo"
+      },
+      "savingsCards": [
+        {
+          "label": "67% Ahorrado",
+          "price": "$63.65"
+        },
+        {
+          "label": "63% Ahorrado",
+          "price": "$59.85"
+        },
+        {
+          "label": "53% Ahorrado",
+          "price": "$49.85"
+        }
+      ],
+      "pricingTable": {
+        "heading": "Ve cuánto ahorrarás",
+        "subHeading": "Vea cómo nuestros precios con descuento superan las tarifas de envío minoristas para ahorros instantáneos.",
+        "tabs": {
+          "canada": [
+            {
+              "carrier": "Canada Post",
+              "retailRate": "$14.50",
+              "ourRate": "$6.24",
+              "youSave": "43%"
+            },
+            {
+              "carrier": "DHL",
+              "retailRate": "$19.75",
+              "ourRate": "$10.27",
+              "youSave": "52%"
+            },
+            {
+              "carrier": "UPS",
+              "retailRate": "$21.00",
+              "ourRate": "$12.80",
+              "youSave": "61%"
+            },
+            {
+              "carrier": "FedEx",
+              "retailRate": "$20.25",
+              "ourRate": "$13.16",
+              "youSave": "65%"
+            }
+          ],
+          "us": "Contenido de la pestaña US",
+          "international": "Contenido de la pestaña Internacional"
+        },
+        "ctaButton": "Comenzar a enviar a Canadá"
+      },
+      "estimator": {
+        "heading": "Estime su costo en segundos",
+        "subHeading": "Ingrese los detalles de su envío para ver estimaciones instantáneas con descuento."
+      },
+      "whyShippers": {
+        "heading": "Por qué los transportistas nos eligen",
+        "subHeading": "Porque el envío debe ser simple, asequible y escalable, sin complicaciones.",
+        "features": [
+          {
+            "title": "Ahorra en todo momento",
+            "description": "Accede a tarifas de transportistas con descuento con ahorros de hasta un 70% sobre los precios minoristas—sin mínimos requeridos.",
+            "icon": "Dollar"
+          },
+          {
+            "title": "Simplicidad que funciona",
+            "description": "Plataforma intuitiva que te hace enviar rápido—sin configuraciones complejas ni curva de aprendizaje.",
+            "icon": "Lightning"
+          },
+          {
+            "title": "Información que importa",
+            "description": "Seguimiento en tiempo real, confirmaciones de entrega y análisis para optimizar tu estrategia de envío.",
+            "icon": "Dashboard"
+          },
+          {
+            "title": "Listo para escalar",
+            "description": "Desde paquetes individuales hasta volúmenes empresariales—nuestra plataforma crece con tus necesidades.",
+            "icon": "Globe"
+          }
+        ]
+      },
+      "ctaSection": {
+        "heading": "¿Listo para enviar de manera más inteligente?",
+        "subHeading": "Ahorra hasta un 70% con la plataforma todo en uno confiable por más de 10K usuarios.",
+        "button": "Comenzar"
+      }
+    }
+  },
+  "helpCenter": {
+    "hero": {
+      "title": "Tu Guía de Envíos",
+      "subtitle": "Ayuda paso a paso, cuando la necesites - para envíos más inteligentes."
+    },
+    "categories": {
+      "subtitle": "Selecciona una categoría para encontrar respuestas rápidas y detalladas.",
+      "cards": [
+        {
+          "icon": "../../../public/assets/images/help-ic-1.svg",
+          "title": "Envíos y Entregas",
+          "description": "Todo lo que necesitas saber sobre enviar, recibir y rastrear tus envíos.",
+          "cta": "Explorar"
+        },
+        {
+          "icon": "../../../public/assets/images/help-ic-2.svg",
+          "title": "Devoluciones y Cumplimiento",
+          "description": "Guías para manejar devoluciones y asegurar que tus envíos cumplan con la ley.",
+          "cta": "Explorar"
+        },
+        {
+          "icon": "../../../public/assets/images/help-ic-3.svg",
+          "title": "Impresión y Herramientas",
+          "description": "Aprende cómo imprimir etiquetas y usar nuestras integraciones inteligentes para ahorrar tiempo.",
+          "cta": "Explorar"
+        },
+        {
+          "icon": "../../../public/assets/images/help-ic-4.svg",
+          "title": "Facturación y Cuenta",
+          "description": "Administra pagos, configuraciones de cuenta y seguridad con facilidad.",
+          "cta": "Explorar"
+        },
+        {
+          "icon": "../../../public/assets/images/help-ic-5.svg",
+          "title": "Soporte y Solución de Problemas",
+          "description": "Soluciones rápidas para problemas comunes y cómo obtener ayuda cuando la necesites.",
+          "cta": "Explorar"
+        },
+        {
+          "icon": "../../../public/assets/images/help-ic-6.svg",
+          "title": "Cómo Entregar Envíos",
+          "description": "Diferentes formas de entregar tus paquetes — la que sea más conveniente.",
+          "cta": "Explorar"
+        }
+      ]
+    },
+    "breadcrumbs": [
+      {
+        "label": "Centro de Ayuda",
+        "link": "/"
+      },
+      {
+        "label": "Envíos y Entregas",
+        "link": "/help-center"
+      },
+      {
+        "label": "Servicios y Tarifas"
+      }
+    ],
+    "shippingDelivery": {
+      "title": "Envíos y Entregas",
+      "subtitle": "Todo lo que necesitas saber sobre enviar, recibir y rastrear tus envíos."
+    },
+    "tabs": [
+      {
+        "value": "services",
+        "label": "Servicios y Tarifas",
+        "content": {
+          "title": "Servicios y Tarifas",
+          "body": "Aprende sobre los servicios de envío que ofrecemos, cómo se calculan los precios y qué tarifas esperar, para que siempre sepas el costo de antemano.",
+          "subTabs": [
+            {
+              "value": "services",
+              "label": "¿Qué servicios ofrecen?",
+              "title": "¿Qué servicios ofrecen?",
+              "body": "Hacemos que el envío sea sencillo ofreciendo una amplia gama de soluciones de entrega para todo tipo de remitentes. Ya sea que envíes un paquete único o administres miles de pedidos, te tenemos cubierto.<ul><li>Envíos nacionales – Entrega rápida de costa a costa en Canadá con transportistas confiables.</li><li>Envíos transfronterizos – Entregas sin complicaciones a EE.UU. con tarifas con descuento y manejo aduanero ágil.</li><li>Envíos internacionales – Llegada a más de 200 países con rastreo en tiempo real y formularios aduaneros sin papel.</li><li>Soluciones empresariales – Herramientas para comercio electrónico, envíos a granel y empresas para automatizar flujos de trabajo y ahorrar costos.</li></ul><p>No importa el tamaño de tu envío, siempre obtendrás entrega confiable, tarifas transparentes y seguimiento completo de principio a fin.</p>"
+            },
+            {
+              "value": "calculated",
+              "label": "¿Cómo se calculan las tarifas?",
+              "title": "¿Cómo se calculan las tarifas?",
+              "body": "Nuestras tarifas se calculan según el peso, dimensiones, destino y opciones de envío seleccionadas. Todas las tarifas se muestran por adelantado."
+            },
+            {
+              "value": "charges",
+              "label": "¿Hay cargos ocultos?",
+              "title": "¿Hay cargos ocultos?",
+              "body": "No hay cargos ocultos. El costo total incluye todas las tarifas asociadas con tu envío."
+            }
+          ]
+        }
+      },
+      {
+        "value": "postage-types",
+        "label": "Tipos de Franquicia",
+        "content": {
+          "title": "Tipos de Franquicia",
+          "body": "Contenido de Tipos de Franquicia"
+        }
+      },
+      {
+        "value": "creating-shipments",
+        "label": "Creación de Envíos",
+        "content": {
+          "title": "Creación de Envíos",
+          "body": "Contenido de Creación de Envíos"
+        }
+      },
+      {
+        "value": "preparing-shipments",
+        "label": "Preparación de Envíos",
+        "content": {
+          "title": "Preparación de Envíos",
+          "body": "Contenido de Preparación de Envíos"
+        }
+      },
+      {
+        "value": "delivery-times",
+        "label": "Tiempos de Entrega y Rastreo",
+        "content": {
+          "title": "Tiempos de Entrega y Rastreo",
+          "body": "Contenido de Tiempos de Entrega y Rastreo"
+        }
+      },
+      {
+        "value": "wheres-my-shipment",
+        "label": "¿Dónde está mi Envío?",
+        "content": {
+          "title": "¿Dónde está mi Envío?",
+          "body": "Contenido de ¿Dónde está mi Envío?"
+        }
+      },
+      {
+        "value": "delayed-shipments",
+        "label": "Envíos Retrasados",
+        "content": {
+          "title": "Envíos Retrasados",
+          "body": "Contenido de Envíos Retrasados"
+        }
+      }
+    ],
+    "cta": {
+      "title": "Eso es toda la ayuda que necesitarás.",
+      "subtitle": "Únete hoy a miles de negocios y hagamos que tus envíos funcionen sin problemas.",
+      "button": "Comenzar"
+    }
+  },
+  "shipTrack": {
+    "hero": {
+      "title": "Envía. Rastrea. Listo.",
+      "subtitle": "Estimaciones instantáneas y seguimiento en tiempo real: simple y confiable."
+    },
+    "tabs": {
+      "estimate": "Estimación",
+      "tracking": "Rastreo"
+    },
+    "cta": {
+      "title": "Envía Inteligente. Ahorra Más.",
+      "subtitle": "Desbloquea tarifas con descuento exclusivas y procesamiento más rápido: comienza a enviar mejor hoy.",
+      "button": "Comenzar"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Rápido. Asequible. Sin fronteras.",
+      "subtitle": "Logística sin esfuerzo para Canadá, EE. UU. y todo el mundo—Tus envíos, a tu manera."
+    },
+    "canada": {
+      "title": "Envíos en Canadá Simplificados",
+      "subtitle": "Envía de costa a costa con transportistas de confianza y tarifas con descuento para particulares y empresas.",
+      "description1": "Ya sea que envíes un paquete ocasional o cumplas pedidos diarios, nuestras soluciones de envío en Canadá cubren todas las provincias y territorios. Disfruta de precios transparentes, opciones de entrega más rápidas y la flexibilidad de enviar según tus términos.",
+      "description2": "Con acceso a transportistas líderes como Canada Post, Purolator, DHL y FedEx, obtienes confiabilidad, rapidez y las mejores tarifas, todo en una sola plataforma.",
+      "button": "Obtén tu Cotización",
+      "cards": {
+        "nationwide": {
+          "title": "Cobertura Nacional",
+          "description": "Envía sin problemas desde los centros urbanos hasta áreas remotas de Canadá.",
+          "alt": "Icono de Hoja de Arce"
+        },
+        "rates": {
+          "title": "Mejores Tarifas, Siempre",
+          "description": "Ahorra hasta un 70% con nuestros descuentos exclusivos de transportistas, obteniendo el mejor valor en cada envío.",
+          "alt": "Icono de Tarifas"
+        },
+        "tracking": {
+          "title": "Seguimiento en Tiempo Real",
+          "description": "Sigue cada envío en tiempo real con todos los transportistas, en cualquier momento y lugar.",
+          "alt": "Icono de Seguimiento"
+        },
+        "flexible": {
+          "title": "Recogida y Entrega Flexible",
+          "description": "Disfruta de la flexibilidad de recogidas gratuitas en tu puerta o entrega en ubicaciones cercanas convenientes.",
+          "alt": "Icono de Camión"
+        }
+      }
+    },
+    "us": {
+      "title": "Envíos a EE. UU. Sin Complicaciones",
+      "subtitle": "Cruza la frontera con confianza—rápido, asequible y simple.",
+      "description1": "Envía paquetes a través de la frontera con facilidad. Simplificamos todo el proceso de envío a EE. UU., desde generar formularios de aduanas hasta asegurar las mejores tarifas, para que puedas enviar como si fuera local.",
+      "description2": "Con acceso a tarifas con descuento de USPS, UPS, DHL, FedEx y otros transportistas líderes, ahorrarás más asegurando entregas confiables en los 50 estados.",
+      "button": "Obtén tu Cotización",
+      "cards": {
+        "automated": {
+          "title": "Aduanas Automatizadas",
+          "description": "Proceso de cruce de frontera optimizado con formularios de aduanas automatizados.",
+          "alt": "Icono de Aduanas Automatizadas"
+        },
+        "discounts": {
+          "title": "Descuentos Exclusivos",
+          "description": "Ahorra mucho con descuentos exclusivos de transportistas confiables de EE. UU.",
+          "alt": "Icono de Descuento"
+        },
+        "fastest": {
+          "title": "Entrega Más Rápida",
+          "description": "Llega a los 50 estados rápidamente con tiempos de tránsito confiables.",
+          "alt": "Icono de Camión"
+        },
+        "tracking": {
+          "title": "Seguimiento de Extremo a Extremo",
+          "description": "Mantente informado con seguimiento de envíos en tiempo real.",
+          "alt": "Icono de Seguimiento"
+        }
+      }
+    },
+    "global": {
+      "title": "Envíos Globales Sin Esfuerzo",
+      "subtitle": "Envía a más de 200 países con soporte completo de aduanas.",
+      "description1": "Amplía tu alcance a nivel mundial con envíos internacionales que se encargan de las partes complicadas por ti. Nos ocupamos de documentos de aduanas, cumplimiento y selección de mensajería para que tus paquetes se muevan sin problemas a través de fronteras.",
+      "description2": "A través de nuestros socios globales, disfruta de precios competitivos y entregas confiables, ya sea que envíes un solo paquete o escales un negocio internacionalmente.",
+      "button": "Obtén tu Cotización",
+      "cards": {
+        "paperless": {
+          "title": "Aduanas Sin Papel",
+          "description": "Genera y envía documentos automáticamente.",
+          "alt": "Icono de Aduanas Automatizadas"
+        },
+        "couriers": {
+          "title": "Transportistas Globales",
+          "description": "Envía a nivel mundial con socios confiables y de confianza.",
+          "alt": "Icono de Globo"
+        },
+        "rates": {
+          "title": "Tarifas Más Bajas",
+          "description": "Accede a precios con descuento para envíos internacionales.",
+          "alt": "Icono de Tarifas"
+        },
+        "tracking": {
+          "title": "Seguimiento Mundial",
+          "description": "Monitorea envíos en tiempo real, en cualquier lugar.",
+          "alt": "Icono de Seguimiento"
+        }
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Enviar de Forma Inteligente?",
+      "subtitle": "Ahorra hasta un 70% con la plataforma de envíos todo en uno, confiable para más de 10K usuarios.",
+      "button": "Comenzar"
+    }
+  },
+  "support": {
+    "hero": {
+      "title": "Aquí Para Ayudar",
+      "subtitle": "Encuentra soluciones al instante, o conecta con soporte con solo un clic."
+    },
+    "cards": {
+      "liveChat": {
+        "title": "Chat en Vivo",
+        "description": "Obtén ayuda instantánea de nuestro equipo en tiempo real.",
+        "link": "Iniciar Chat en Vivo",
+        "alt": "Icono de Confiabilidad"
+      },
+      "email": {
+        "title": "Soporte por Email",
+        "description": "Envíanos tu pregunta—respuestas rápidas, siempre.",
+        "link": "Contactar por Email",
+        "alt": "Icono de Simplicidad"
+      },
+      "helpCenter": {
+        "title": "Centro de Ayuda",
+        "description": "Encuentra guías paso a paso y preguntas frecuentes en cualquier momento.",
+        "link": "Visitar Centro de Ayuda",
+        "alt": "Icono de Confianza"
+      }
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "subtitle": "Respuestas rápidas sobre los temas que más importan.",
+      "tabs": {
+        "shipping": "Envíos",
+        "returns": "Devoluciones",
+        "tracking": "Seguimiento",
+        "billing": "Facturación"
+      },
+      "accordion": {
+        "item1": {
+          "question": "¿Cuánto tarda el envío internacional?",
+          "answer": "Los tiempos de entrega varían según el destino y el transportista, pero la mayoría de los envíos internacionales llegan dentro de 7–14 días hábiles. En el pago, verás una ventana de entrega estimada para el servicio elegido."
+        },
+        "item2": {
+          "question": "¿Puedo cambiar la dirección de envío después de haber realizado un pedido?",
+          "answer": "Envía un paquete en cualquier momento sin configuraciones ni complejidad. Solo ingresa los detalles, obtén la mejor tarifa y tu paquete estará en camino—simple, rápido y confiable cada vez."
+        },
+        "item3": {
+          "question": "¿Cuáles son las opciones de envío disponibles y sus costos?",
+          "answer": "Envía un paquete en cualquier momento sin configuraciones ni complejidad. Solo ingresa los detalles, obtén la mejor tarifa y tu paquete estará en camino—simple, rápido y confiable cada vez."
+        }
+      }
+    },
+    "emailSupport": {
+      "title": "Soporte por Email Dedicado",
+      "subtitle": "Respuestas rápidas y amables—directamente en tu bandeja de entrada.",
+      "form": {
+        "fullName": "Nombre Completo",
+        "fullNamePlaceholder": "Tu Nombre Completo",
+        "email": "Correo Electrónico",
+        "emailPlaceholder": "Tu Email",
+        "message": "Mensaje",
+        "messagePlaceholder": "Describe tu problema o pregunta…",
+        "submit": "Enviar Mensaje"
+      },
+      "info": {
+        "question": "¿Tienes una pregunta o necesitas ayuda extra?",
+        "instructions": "Solo completa el formulario y nuestro equipo de soporte te responderá pronto. Normalmente respondemos en 2–4 horas hábiles.",
+        "liveChat": "¿Necesitas respuesta rápida? Prueba Chat en Vivo."
+      }
+    },
+    "cta": {
+      "title": "Eso es Toda la Ayuda que Necesitarás.",
+      "subtitle": "Únete a miles de empresas hoy, y hagamos que tu envío funcione sin problemas.",
+      "button": "Comenzar"
+    }
+  },
+  "ship": {
+    "hero": {
+      "title": "Envía y Devuelve con Facilidad",
+      "subtitle": "Envíos y devoluciones simples, rápidos y asequibles, en cualquier parte del mundo."
+    },
+    "steps": {
+      "title": "Cómo Enviar en 4 Sencillos Pasos",
+      "subtitle": "Crea, etiqueta, entrega y rastrea: enviar nunca ha sido tan fácil.",
+      "createAccount": {
+        "title": "Crear Cuenta",
+        "description": "Regístrate en solo unos minutos y obtén acceso a tarifas de envío exclusivas y con descuento. Sin tarifas ocultas, sin configuraciones largas, solo una forma rápida de comenzar a enviar de manera inteligente.",
+        "alt": "Crear Cuenta"
+      },
+      "printLabel": {
+        "title": "Imprimir Etiqueta",
+        "description": "Simplemente ingresa los detalles de tu envío, compara opciones de transportista e imprime tu etiqueta desde tu hogar u oficina. Ahorra tiempo y dinero sin esperar en fila.",
+        "alt": "Imprimir Etiqueta"
+      },
+      "dropOff": {
+        "title": "Entrega o Recogida Programada",
+        "description": "Envía a tu manera: deja tu paquete en una ubicación asociada cercana o solicita una recogida gratuita directamente en tu puerta. Opciones flexibles diseñadas para ajustarse a tu horario.",
+        "alt": "Entrega o Recogida"
+      },
+      "track": {
+        "title": "Rastrea tu Envío",
+        "description": "Sigue cada paso del recorrido de tu envío con actualizaciones en tiempo real. Desde el momento en que sale de tus manos hasta la entrega final, siempre sabrás dónde se encuentra.",
+        "alt": "Rastrear Envío"
+      }
+    },
+    "returns": {
+      "title": "Devoluciones Fáciles y Flexibles",
+      "subtitle": "Opciones sin complicaciones para ti y tus clientes.",
+      "prepare": {
+        "title": "Prepara tu devolución",
+        "description": "Asegura tus artículos con un embalaje adecuado para una entrega segura.",
+        "alt": "Preparar Devolución"
+      },
+      "submit": {
+        "title": "Enviar Solicitud de Devolución",
+        "description": "Solicita tu devolución directamente desde tu panel con solo unos clics.",
+        "alt": "Enviar Devolución"
+      },
+      "pickup": {
+        "title": "Recoger o Entregar",
+        "description": "Recoge tu devolución en una de nuestras sucursales en GTA, o elige la opción que mejor se adapte a ti.",
+        "alt": "Recoger o Entregar"
+      },
+      "cta": "Comenzar"
+    },
+    "cta": {
+      "title": "¿Listo para Comenzar?",
+      "subtitle": "Crea tu cuenta gratuita y comencemos a enviar.",
+      "button": "Comenzar a Enviar Hoy"
+    }
+  }
+}

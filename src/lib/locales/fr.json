@@ -1,0 +1,484 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "pricing": "Tarifs",
+    "integration": "Intégration",
+    "whyShipNFlash": "Pourquoi Ship N Flash",
+    "aboutUs": "À propos de nous",
+    "login": "Connexion",
+    "getStarted": "Commencer",
+    "language": "Langue",
+    "english": "Anglais"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Gros rabais, transporteurs de confiance.",
+      "description": "Partenariat avec les meilleurs transporteurs et profitez de remises en gros — réduisez les coûts d'expédition jusqu'à 60 % sans perdre en fiabilité.",
+      "saved": "63% Économisé",
+      "currentPrice": "59,85 $",
+      "originalPrice": "95,00 $",
+      "partneredWith": "En partenariat avec"
+    },
+    "slide2": {
+      "title": "Connaissez chaque étape — toujours.",
+      "description": "Du ramassage à la livraison, suivez vos expéditions en temps réel — obtenez des mises à jour instantanées et tenez vos clients informés à chaque étape."
+    },
+    "slide3": {
+      "title": "Des insights qui stimulent la croissance",
+      "description": "Analysez les coûts, la performance des transporteurs et la vitesse de livraison — obtenez des informations qui réduisent les dépenses et améliorent l'efficacité à chaque expédition.",
+      "spending": "Dépenses",
+      "earning": "Revenus",
+      "delivered": "Livré",
+      "return": "Retour"
+    },
+    "slide4": {
+      "title": "Expédition simplifiée.",
+      "description": "Transformez la logistique compliquée en un processus simple en deux clics — réduisez les problèmes évitables jusqu'à 90 % tout en gagnant du temps et de l'énergie."
+    }
+  },
+  "shippingEstimator": {
+    "title": "Votre expédition commence ici.",
+    "fromLabel": "De",
+    "fromPlaceholder": "Sélectionner l’origine",
+    "toLabel": "À",
+    "toPlaceholder": "Sélectionner la destination",
+    "packageTypeLabel": "Type de colis",
+    "packageTypePlaceholder": "Sélectionner le type",
+    "packageWeightLabel": "Poids du colis",
+    "packageWeightUnit": "En livres (LBS)",
+    "submitButton": "Obtenir une estimation",
+    "bottom": "Devis gratuits • Sans engagement • Résultats instantanés",
+
+    "result": {
+      "title": "Vos résultats",
+      "shippingDateLabel": "Date d’expédition",
+      "shippingDateValue": "14 sept. 2025",
+      "serviceLevel": "Niveau de service",
+      "estTime": "Heure de livraison estimée",
+      "priceLabel": "Prix",
+      "saveLabel": "Économisez",
+      "moreLabel": "Plus",
+      "selectLabel": "Sélectionner",
+
+      "note": "Remarque : Les tarifs sont des estimations et peuvent changer selon les détails du colis, les suppléments ou les mises à jour d’adresse. Les délais de livraison sont des estimations et peuvent être retardés par des facteurs indépendants de la volonté du transporteur. Taxes incluses lorsque applicable."
+    },
+
+    "collapsibleContent": {
+      "cutoffTimeLabel": "Heure limite",
+      "rateZoneLabel": "Zone tarifaire",
+      "billableWeightLabel": "Poids facturable",
+      "currencyCodeLabel": "Code de devise",
+      "trackingLabel": "Suivi",
+      "pickupAvailableLabel": "Ramassage disponible",
+      "pickupFeeLabel": "Frais de ramassage",
+      "baseRateLabel": "Tarif de base",
+      "fuelSurchargeLabel": "Supplément carburant",
+      "totalCostLabel": "Coût total"
+    }
+  },
+  "shippingMadeEasy": {
+    "title": "Expédition facile pour tous",
+    "description": "Peu importe la fréquence de vos expéditions ou la croissance de votre entreprise, notre plateforme s’adapte à vos besoins.",
+    "startShippingToday": "Commencez à expédier aujourd'hui",
+    "oneTimeShippers": "Expéditeurs ponctuels",
+    "oneTimeShippersDesc": "Envoyez un colis à tout moment sans configuration complexe. Entrez simplement les détails, obtenez le meilleur tarif et votre colis est en route — simple, rapide et fiable à chaque fois.",
+    "growingBusiness": "Entreprise en croissance",
+    "growingBusinessDesc": "Envoyez un colis à tout moment sans configuration complexe. Entrez simplement les détails, obtenez le meilleur tarif et votre colis est en route — simple, rapide et fiable à chaque fois.",
+    "ecommerce": "E-commerce",
+    "ecommerceDesc": "Envoyez un colis à tout moment sans configuration complexe. Entrez simplement les détails, obtenez le meilleur tarif et votre colis est en route — simple, rapide et fiable à chaque fois.",
+    "proShippers": "Expéditeurs professionnels",
+    "proShippersDesc": "Envoyez un colis à tout moment sans configuration complexe. Entrez simplement les détails, obtenez le meilleur tarif et votre colis est en route — simple, rapide et fiable à chaque fois.",
+    "enterprises": "Entreprises",
+    "enterprisesDesc": "Envoyez un colis à tout moment sans configuration complexe. Entrez simplement les détails, obtenez le meilleur tarif et votre colis est en route — simple, rapide et fiable à chaque fois."
+  },
+  "shippingPlaces": {
+    "title": "Expédiez partout facilement",
+    "description": "Solutions simples et abordables pour le Canada, les États-Unis et le monde entier.",
+    "canadaShipping": {
+      "title": "Expédition au Canada",
+      "description": "Livrez facilement à travers le Canada. Accédez à des transporteurs fiables à tarifs réduits et atteignez vos clients d'un océan à l'autre avec un service rapide et fiable. Le suivi en temps réel et une livraison fluide rendent chaque expédition sans stress."
+    },
+    "usShipping": {
+      "title": "Expédition aux États-Unis",
+      "description": "Simplifiez l'expédition transfrontalière. Obtenez les meilleurs tarifs réduits, un traitement douanier transparent et des délais de livraison prévisibles. Développez-vous sur le marché américain en toute confiance et fiabilité."
+    },
+    "internationalShipping": {
+      "title": "Expédition internationale",
+      "description": "Allez à l’international sans tracas. Expédiez vers plus de 200 pays avec des tarifs compétitifs, des douanes sans papier et un suivi en temps réel. Étendez votre portée mondiale avec une livraison fluide, sécurisée et abordable."
+    }
+  },
+  "fourSteps": {
+    "title": "Expédiez intelligemment en 4 étapes",
+    "description": "De l'emballage à la livraison, chaque étape est simplifiée.",
+    "step1": {
+      "title": "Emballez votre expédition",
+      "description": "Protégez vos articles avec un emballage approprié pour une livraison sécurisée."
+    },
+    "step2": {
+      "title": "Comparez & choisissez",
+      "description": "Visualisez instantanément les options de transporteurs à tarif réduit et choisissez celle qui vous convient le mieux."
+    },
+    "step3": {
+      "title": "Imprimez & préparez",
+      "description": "Imprimez les étiquettes en quelques secondes, fixez-les, et préparez votre colis."
+    },
+    "step4": {
+      "title": "Expédiez & suivez",
+      "description": "Planifiez un ramassage ou un dépôt, puis suivez votre livraison en temps réel."
+    },
+    "getStarted": "Commencer"
+  },
+  "faq": {
+    "title": "Questions fréquemment posées",
+    "description": "Les questions les plus courantes — sans confusion ni surprises.",
+    "question1": "Les prix affichés sont-ils définitifs ou y aura-t-il des frais supplémentaires ?",
+    "answer1": "Oui. Le prix affiché est le prix final — toutes taxes et frais inclus. Pas de surprises cachées. Vous pouvez réserver en toute confiance.",
+    "question2": "Pourquoi vos tarifs sont-ils moins chers que ceux des transporteurs directement ?",
+    "answer2": "Envoyez un colis à tout moment sans configuration complexe. Entrez les détails, obtenez le meilleur tarif et votre colis est en route — simple, rapide et fiable.",
+    "question3": "Comment planifier un ramassage ?",
+    "answer3": "Envoyez un colis à tout moment sans configuration complexe. Entrez les détails, obtenez le meilleur tarif et votre colis est en route — simple, rapide et fiable.",
+    "question4": "Que se passe-t-il si le chauffeur ne se présente pas ?",
+    "answer4": "Envoyez un colis à tout moment sans configuration complexe. Entrez les détails, obtenez le meilleur tarif et votre colis est en route — simple, rapide et fiable.",
+    "question5": "Comment contacter le support ?",
+    "answer5": "Envoyez un colis à tout moment sans configuration complexe. Entrez les détails, obtenez le meilleur tarif et votre colis est en route — simple, rapide et fiable."
+  },
+  "cta": {
+    "title": "Prêt à expédier plus intelligemment ?",
+    "description": "Économisez jusqu'à 70 % avec la plateforme d'expédition tout-en-un utilisée par plus de 10 000 entreprises.",
+    "getStarted": "Commencer"
+  },
+  "common": {
+    "step": "étape",
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "close": "Fermer",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "submit": "Soumettre",
+    "reset": "Réinitialiser",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "view": "Voir",
+    "download": "Télécharger",
+    "upload": "Téléverser",
+    "print": "Imprimer",
+    "share": "Partager",
+    "copy": "Copier",
+    "paste": "Coller",
+    "cut": "Couper",
+    "undo": "Annuler",
+    "redo": "Rétablir"
+  },
+  "error404": {
+    "title": "Page non trouvée",
+    "description": "Désolé, nous n'avons pas trouvé la page que vous recherchez. Elle a peut-être été déplacée, supprimée ou l'URL est incorrecte.",
+    "requestedPath": "Chemin demandé",
+    "goHome": "Aller à l'accueil",
+    "viewPricing": "Voir les tarifs",
+    "helpTitle": "Besoin d'aide ?",
+    "commonCauses": {
+      "title": "Causes courantes",
+      "typo": "Erreur de frappe dans l'URL",
+      "moved": "Page déplacée ou renommée",
+      "deleted": "Page supprimée"
+    },
+    "whatToDo": {
+      "title": "Que faire",
+      "checkUrl": "Vérifiez l'URL pour les fautes de frappe",
+      "useNavigation": "Utilisez le menu de navigation",
+      "contactSupport": "Contactez notre équipe support"
+    },
+    "stillNeedHelp": "Vous avez encore besoin d'aide ?",
+    "contactSupport": "Contacter le support"
+  },
+  "about": {
+    "shippingPage": {
+      "header": {
+        "title": "Shipping.CA",
+        "subtitle": "Conçu pour les expéditeurs, de confiance pour les entreprises"
+      },
+      "ourStory": {
+        "title": "Notre histoire",
+        "description": "Nous avons commencé avec un seul objectif : rendre l'expédition simple, abordable et fiable pour tous. Des expéditeurs ponctuels aux entreprises mondiales, nous sommes devenus un partenaire de confiance en combinant transporteurs leaders, technologie avancée et support client dédié. Aujourd'hui, nous aidons des milliers d'entreprises à expédier plus intelligemment chaque jour."
+      },
+      "ourMission": {
+        "title": "Notre mission",
+        "description": "Permettre aux entreprises et aux particuliers de bénéficier de solutions d'expédition sans stress, transparentes et abordables."
+      },
+      "ourVision": {
+        "title": "Notre vision",
+        "description": "Permettre aux entreprises et aux particuliers de bénéficier de solutions d'expédition sans stress, transparentes et abordables."
+      },
+      "coreValues": [
+        {
+          "title": "Fiabilité",
+          "description": "Livrer à temps, à chaque fois."
+        },
+        {
+          "title": "Simplicité",
+          "description": "Éliminer les tracas de la logistique."
+        },
+        {
+          "title": "Confiance",
+          "description": "Expédition sécurisée avec les meilleurs transporteurs."
+        },
+        {
+          "title": "Technologie intelligente",
+          "description": "Technologie rapide, efficace et économique."
+        }
+      ],
+      "trustedBy": {
+        "subtitle": "De confiance par les meilleurs"
+      },
+      "team": {
+        "title": "L'équipe derrière la plateforme",
+        "subtitle": "Une équipe passionnée dédiée à redéfinir votre façon d'expédier",
+        "members": [
+          { "name": "John Dow", "role": "Fondateur" },
+          { "name": "John Dow", "role": "Fondateur" },
+          { "name": "John Dow", "role": "Fondateur" },
+          { "name": "John Dow", "role": "Fondateur" },
+          { "name": "John Dow", "role": "Fondateur" },
+          { "name": "John Dow", "role": "Fondateur" },
+          { "name": "John Dow", "role": "Fondateur" },
+          { "name": "John Dow", "role": "Fondateur" }
+        ]
+      },
+      "cta": {
+        "title": "Prêt à expédier plus intelligemment ?",
+        "description": "Économisez jusqu'à 70 % avec la plateforme d'expédition tout-en-un utilisée par plus de 10 000 entreprises."
+      },
+      "ctaButton": "Commencer gratuitement"
+    }
+  },
+  "pricing": {
+    "pricingPage": {
+      "hero": {
+        "title": "Économisez gros sur chaque expédition",
+        "subtitle": "Profitez jusqu'à <strong>70% de réduction</strong> avec des tarifs transporteurs réduits. Pas de frais mensuels, pas d'engagements. Simple et transparent.",
+        "button": "Inscrivez-vous gratuitement pour voir les tarifs en direct"
+      },
+      "savingsCards": [
+        { "label": "67% Économisé", "price": "63,65 $" },
+        { "label": "63% Économisé", "price": "59,85 $" },
+        { "label": "53% Économisé", "price": "49,85 $" }
+      ],
+      "pricingTable": {
+        "heading": "Découvrez vos économies",
+        "subHeading": "Voyez comment nos tarifs réduits surpassent les tarifs de détail pour des économies immédiates.",
+        "tabs": {
+          "canada": [
+            {
+              "carrier": "Postes Canada",
+              "retailRate": "14,50 $",
+              "ourRate": "6,24 $",
+              "youSave": "43%"
+            },
+            {
+              "carrier": "DHL",
+              "retailRate": "19,75 $",
+              "ourRate": "10,27 $",
+              "youSave": "52%"
+            },
+            {
+              "carrier": "UPS",
+              "retailRate": "21,00 $",
+              "ourRate": "12,80 $",
+              "youSave": "61%"
+            },
+            {
+              "carrier": "FedEx",
+              "retailRate": "20,25 $",
+              "ourRate": "13,16 $",
+              "youSave": "65%"
+            }
+          ],
+          "us": "Contenu de l'onglet États-Unis",
+          "international": "Contenu de l'onglet international"
+        },
+        "ctaButton": "Commencez à expédier au Canada"
+      },
+      "estimator": {
+        "heading": "Estimez votre coût en quelques secondes",
+        "subHeading": "Entrez vos détails d'expédition pour obtenir instantanément des estimations réduites."
+      },
+      "whyShippers": {
+        "heading": "Pourquoi les expéditeurs nous choisissent",
+        "subHeading": "L'expédition doit être simple, abordable et évolutive — sans tracas.",
+        "features": [
+          {
+            "title": "Économisez gros à chaque fois",
+            "description": "Accédez à des tarifs transporteurs réduits avec des économies allant jusqu'à 70 % — sans minimum.",
+            "icon": "Dollar"
+          },
+          {
+            "title": "Simplicité efficace",
+            "description": "Plateforme intuitive pour expédier rapidement — aucune configuration complexe requise.",
+            "icon": "Lightning"
+          },
+          {
+            "title": "Insights importants",
+            "description": "Suivi en temps réel, confirmations de livraison et analyses pour optimiser votre stratégie d'expédition.",
+            "icon": "Dashboard"
+          },
+          {
+            "title": "Prêt à évoluer",
+            "description": "Des colis uniques aux volumes d'entreprise — notre plateforme évolue avec vos besoins.",
+            "icon": "Globe"
+          }
+        ]
+      },
+      "ctaSection": {
+        "heading": "Prêt à expédier plus intelligemment ?",
+        "subHeading": "Économisez jusqu'à 70 % avec la plateforme tout-en-un utilisée par 10K+ entreprises.",
+        "button": "Commencer"
+      }
+    }
+  },
+  "helpCenter": {
+    "hero": {
+      "title": "Votre guide d'expédition",
+      "subtitle": "Aide étape par étape, quand vous en avez besoin - pour une expédition plus intelligente."
+    },
+    "categories": {
+      "subtitle": "Sélectionnez une catégorie pour trouver des réponses rapides et détaillées.",
+      "cards": [
+        {
+          "icon": "../../../public/assets/images/help-ic-1.svg",
+          "title": "Expédition & Livraison",
+          "description": "Tout ce que vous devez savoir sur l'envoi, la réception et le suivi de vos colis.",
+          "cta": "Explorer"
+        },
+        {
+          "icon": "../../../public/assets/images/help-ic-2.svg",
+          "title": "Retours & Conformité",
+          "description": "Directives pour gérer les retours et assurer la conformité aux règles d'expédition.",
+          "cta": "Explorer"
+        },
+        {
+          "icon": "../../../public/assets/images/help-ic-3.svg",
+          "title": "Impression & Outils",
+          "description": "Apprenez à imprimer des affranchissements et à utiliser nos intégrations intelligentes.",
+          "cta": "Explorer"
+        },
+        {
+          "icon": "../../../public/assets/images/help-ic-4.svg",
+          "title": "Facturation & Compte",
+          "description": "Gérez paiements, paramètres de compte et sécurité facilement.",
+          "cta": "Explorer"
+        },
+        {
+          "icon": "../../../public/assets/images/help-ic-5.svg",
+          "title": "Support & Dépannage",
+          "description": "Solutions rapides pour problèmes courants et aide disponible.",
+          "cta": "Explorer"
+        },
+        {
+          "icon": "../../../public/assets/images/help-ic-6.svg",
+          "title": "Acheminer vos colis chez nous",
+          "description": "Différentes façons de remettre vos colis — choisissez la plus pratique.",
+          "cta": "Explorer"
+        }
+      ]
+    },
+    "breadcrumbs": [
+      { "label": "Centre d'aide", "link": "/" },
+      { "label": "Expédition & Livraison", "link": "/help-center" },
+      { "label": "Services & Tarifs" }
+    ],
+    "shippingDelivery": {
+      "title": "Expédition & Livraison",
+      "subtitle": "Tout ce que vous devez savoir sur l'envoi, la réception et le suivi de vos colis."
+    },
+    "tabs": [
+      {
+        "value": "services",
+        "label": "Services & Tarifs",
+        "content": {
+          "title": "Services & Tarifs",
+          "body": "Découvrez les services d'expédition que nous proposons, comment les tarifs sont calculés et quels frais s'appliquent — pour toujours connaître le coût exact.",
+          "subTabs": [
+            {
+              "value": "services",
+              "label": "Quels services proposez-vous ?",
+              "title": "Quels services proposez-vous ?",
+              "body": "Nous rendons l'expédition simple en proposant une large gamme de solutions pour tous les types d'expéditeurs. Que vous envoyiez un seul colis ou des milliers de commandes, nous avons ce qu'il vous faut.<ul><li>Expédition nationale – Livraison rapide à travers le Canada avec transporteurs fiables.</li><li>Expédition transfrontalière – Livraisons aux États-Unis sans tracas avec tarifs réduits et douanes simplifiées.</li><li>Expédition internationale – Atteignez 200+ pays avec suivi en temps réel et formulaires douaniers sans papier.</li><li>Solutions entreprises – Outils pour e-commerce, expéditeurs en gros et entreprises pour automatiser les flux et économiser.</li></ul><p>Quelle que soit la taille de votre envoi, vous bénéficierez toujours d'une livraison fiable, de tarifs transparents et d'un suivi complet du début à la fin.</p>"
+            },
+            {
+              "value": "calculated",
+              "label": "Comment les frais sont-ils calculés ?",
+              "title": "Comment les frais sont-ils calculés ?",
+              "body": "Nos frais sont calculés en fonction du poids, des dimensions, de la destination et des options d'expédition choisies. Tous les tarifs sont affichés à l'avance."
+            },
+            {
+              "value": "charges",
+              "label": "Y a-t-il des frais cachés ?",
+              "title": "Y a-t-il des frais cachés ?",
+              "body": "Aucun frais caché. Le coût total inclut tous les frais liés à votre expédition."
+            }
+          ]
+        }
+      },
+      {
+        "value": "postage-types",
+        "label": "Types d'affranchissement",
+        "content": {
+          "title": "Types d'affranchissement",
+          "body": "Contenu pour les types d'affranchissement"
+        }
+      },
+      {
+        "value": "creating-shipments",
+        "label": "Créer des expéditions",
+        "content": {
+          "title": "Créer des expéditions",
+          "body": "Contenu pour créer des expéditions"
+        }
+      },
+      {
+        "value": "preparing-shipments",
+        "label": "Préparer des expéditions",
+        "content": {
+          "title": "Préparer des expéditions",
+          "body": "Contenu pour préparer des expéditions"
+        }
+      },
+      {
+        "value": "delivery-times",
+        "label": "Délais & suivi",
+        "content": {
+          "title": "Délais & suivi",
+          "body": "Contenu pour délais et suivi"
+        }
+      },
+      {
+        "value": "wheres-my-shipment",
+        "label": "Où est mon colis ?",
+        "content": {
+          "title": "Où est mon colis ?",
+          "body": "Contenu pour où est mon colis ?"
+        }
+      },
+      {
+        "value": "delayed-shipments",
+        "label": "Expéditions retardées",
+        "content": {
+          "title": "Expéditions retardées",
+          "body": "Contenu pour expéditions retardées"
+        }
+      }
+    ],
+    "cta": {
+      "title": "C'est tout l'aide dont vous aurez besoin.",
+      "subtitle": "Rejoignez des milliers d'entreprises dès aujourd'hui et facilitez vos expéditions.",
+      "button": "Commencer"
+    }
+  }
+}

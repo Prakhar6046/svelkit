@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "data": {
+    "country": "Canada",
+    "postalCode": "M5H 2N2",
+    "cutoffTimes": [
+      {
+        "carrier": "FedEx",
+        "serviceType": "Ground",
+        "cutoffTime": "5:00 PM",
+        "note": "Same-day pickup if booked before cutoff.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "UPS",
+        "serviceType": "Standard",
+        "cutoffTime": "4:30 PM",
+        "note": "Next-day delivery available.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "DHL",
+        "serviceType": "Express",
+        "cutoffTime": "6:00 PM",
+        "note": "International shipping available.",
+        "image": "/assets/images/carrierServices1.png"
+      },
+      {
+        "carrier": "Canada Post",
+        "serviceType": "Regular",
+        "cutoffTime": "3:00 PM",
+        "note": "Domestic shipping only.",
+        "image": "/assets/images/carrierServices1.png"
+      }
+    ]
+  },
+  "message": "Cutoff times retrieved successfully"
+}
