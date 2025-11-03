@@ -351,37 +351,37 @@
       "subtitle": "Sélectionnez une catégorie pour trouver des réponses rapides et détaillées.",
       "cards": [
         {
-          "icon": "$lib/assets/images/help-ic-1.svg",
+          "icon": "/assets/images/help-ic-1.svg",
           "title": "Expédition & Livraison",
           "description": "Tout ce que vous devez savoir sur l'envoi, la réception et le suivi de vos colis.",
           "cta": "Explorer"
         },
         {
-          "icon": "$lib/assets/images/help-ic-2.svg",
+          "icon": "/assets/images/help-ic-2.svg",
           "title": "Retours & Conformité",
           "description": "Directives pour gérer les retours et assurer la conformité aux règles d'expédition.",
           "cta": "Explorer"
         },
         {
-          "icon": "$lib/assets/images/help-ic-3.svg",
+          "icon": "/assets/images/help-ic-3.svg",
           "title": "Impression & Outils",
           "description": "Apprenez à imprimer des affranchissements et à utiliser nos intégrations intelligentes.",
           "cta": "Explorer"
         },
         {
-          "icon": "$lib/assets/images/help-ic-4.svg",
+          "icon": "/assets/images/help-ic-4.svg",
           "title": "Facturation & Compte",
           "description": "Gérez paiements, paramètres de compte et sécurité facilement.",
           "cta": "Explorer"
         },
         {
-          "icon": "$lib/assets/images/help-ic-5.svg",
+          "icon": "/assets/images/help-ic-5.svg",
           "title": "Support & Dépannage",
           "description": "Solutions rapides pour problèmes courants et aide disponible.",
           "cta": "Explorer"
         },
         {
-          "icon": "$lib/assets/images/help-ic-6.svg",
+          "icon": "/assets/images/help-ic-6.svg",
           "title": "Acheminer vos colis chez nous",
           "description": "Différentes façons de remettre vos colis — choisissez la plus pratique.",
           "cta": "Explorer"

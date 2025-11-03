@@ -29,7 +29,7 @@
   <main
     class="bg-white min-h-screen flex flex-col items-center justify-between py-10"
   >
-    <img src="/static/img/app-logo.svg" alt="logo" />
+    <img src="/img/app-logo.svg" alt="logo" />
     <!-- Loading Text -->
     <div class="flex flex-col items-center justify-center">
       <img src="/assets/images/loader2.svg" alt="loader" />

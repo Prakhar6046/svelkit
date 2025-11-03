@@ -15,3 +15,29 @@ export type WithoutChildrenOrChild<T> = WithoutChildren<WithoutChild<T>>;
 export type WithElementRef<T, U extends HTMLElement = HTMLElement> = T & {
   ref?: U | null;
 };
+
+
+// src/lib/utils/getLocaleData.ts
+import { get } from 'svelte/store';
+import { dictionary, locale } from 'svelte-i18n';
+
+// Generic helper for deep nested dictionary access
+export function getLocaleData<T>(path: string): T | undefined {
+  const currentLocale = get(locale);
+  const currentDictionary = get(dictionary);
+
+  if (!currentLocale || !currentDictionary[currentLocale]) return undefined;
+
+  const keys = path.split('.');
+  let result: unknown = currentDictionary[currentLocale];
+
+  for (const key of keys) {
+    if (result && typeof result === 'object' && key in result) {
+      result = (result as Record<string, unknown>)[key];
+    } else {
+      return undefined;
+    }
+  }
+
+  return result as T;
+}

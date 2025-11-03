@@ -383,37 +383,37 @@
       "subtitle": "Select a category to find quick, detailed answers.",
       "cards": [
         {
-          "icon": "$lib/assets/images/help-ic-1.svg",
+          "icon": "/assets/images/help-ic-1.svg",
           "title": "Shipping & Delivery",
           "description": "Everything you need to know about sending, receiving, and tracking your shipments.",
           "cta": "Explore"
         },
         {
-          "icon": "$lib/assets/images/help-ic-2.svg",
+          "icon": "/assets/images/help-ic-2.svg",
           "title": "Returns & Compliance",
           "description": "Guidelines for handling returns and ensuring your shipments follow shipping laws.",
           "cta": "Explore"
         },
         {
-          "icon": "$lib/assets/images/help-ic-3.svg",
+          "icon": "/assets/images/help-ic-3.svg",
           "title": "Printing & Tools",
           "description": "Learn how to print postage and use our smart integrations to save time.",
           "cta": "Explore"
         },
         {
-          "icon": "$lib/assets/images/help-ic-4.svg",
+          "icon": "/assets/images/help-ic-4.svg",
           "title": "Billing & Account",
           "description": "Manage payments, account settings, and security with ease.",
           "cta": "Explore"
         },
         {
-          "icon": "$lib/assets/images/help-ic-5.svg",
+          "icon": "/assets/images/help-ic-5.svg",
           "title": "Support & Troubleshooting",
           "description": "Quick fixes for common issues and how to get help when you need it.",
           "cta": "Explore"
         },
         {
-          "icon": "$lib/assets/images/help-ic-6.svg",
+          "icon": "/assets/images/help-ic-6.svg",
           "title": "Getting Shipments to Us",
           "description": "Different ways to hand off your parcels — whichever is most convenient.",
           "cta": "Explore"

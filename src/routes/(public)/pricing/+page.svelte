@@ -10,14 +10,12 @@
   } from '$lib/components/ui/tabs';
   import PublicFooter from '$lib/components/PublicFooter.svelte';
   import ShippingEstimator from '$lib/components/Shipping.svelte';
-  import Dollar from '../../../public/assets/images/pricing/ic-dollar.svg';
-  import Lightning from '../../../public/assets/images/pricing/ic-lightning.svg';
-  import Dashboard from '../../../public/assets/images/pricing/ic-dashboard.svg';
-  import Globe from '../../../public/assets/images/pricing/ic-globe.svg';
-  
-   import { get } from 'svelte-i18n';
-
-  const savingsCards = get('pricing.pricingPage.savingsCards');
+  import Dollar from '$lib/assets/images/pricing/ic-dollar.svg';
+  import Lightning from '$lib/assets/images/pricing/ic-lightning.svg';
+  import Dashboard from '$lib/assets/images/pricing/ic-dashboard.svg';
+  import Globe from '$lib/assets/images/pricing/ic-globe.svg';
+  import { t } from 'svelte-i18n';
+  import { onMount } from 'svelte';
 
 </script>
 

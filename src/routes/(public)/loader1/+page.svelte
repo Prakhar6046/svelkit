@@ -20,7 +20,7 @@
   <main
     class="bg-white min-h-screen flex flex-col items-center justify-between py-10"
   >
-    <img src="/static/img/app-logo.svg" alt="logo" />
+    <img src="/img/app-logo.svg" alt="logo" />
   
     <!-- Loading Text -->
     <div class="flex flex-col items-center justify-center">
@@ -39,8 +39,8 @@
             ? ''
             : 'animate-spin'}"
           style="background-image: url({progress === 100
-            ? '/static/img/loader-complete.svg'
-            : '/static/img/loader.svg'})"
+            ? '/img/loader-complete.svg'
+            : '/img/loader.svg'})"
         ></div>
         <span class="absolute text-2xl font-bold" style="color: #583D72;">
           {progress}%
