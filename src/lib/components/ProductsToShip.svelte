@@ -191,7 +191,6 @@
     </div>
 
     <Button
-      asChild
       class="me-auto flex items-center font-semibold text-sm sm:text-base md:text-lg text-primary-400 bg-primary-200 shadow-none border border-primary-200 rounded-xl py-2 xl:py-2.5 !px-6 h-auto cursor-pointer hover:shadow-md"
     >
       <Icon icon="iconoir:plus" class="size-8 text-primary-400" /> Add Package
@@ -241,7 +240,6 @@
       >
 
       <Button
-        asChild
         class="flex items-center font-semibold text-sm sm:text-base md:text-lg text-bland-25 bg-primary-400 shadow-none border border-primary-400 rounded-xl py-2 xl:py-2.5 !px-6 h-auto cursor-pointer hover:shadow-md"
       >
         Get Started

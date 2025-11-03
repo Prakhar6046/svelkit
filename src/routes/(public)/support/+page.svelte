@@ -315,7 +315,6 @@
           </div>
           <div class="col-span-4 my-auto">
             <Button
-              asChild
               class="ms-auto me-auto md:me-0 flex items-center font-semibold text-sm sm:text-base md:text-lg text-bland-25 bg-primary-400 shadow-none border border-primary-400 rounded-xl py-2 xl:py-2.5 !px-6 h-auto cursor-pointer hover:shadow-md"
             >
               {$t('support.cta.button')}<Icon

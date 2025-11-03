@@ -632,7 +632,6 @@
         </div>
   
         <Button
-          asChild
           onclick={handleNext}
           class="ms-auto me-auto md:me-0 common-button mt-4"
         >
