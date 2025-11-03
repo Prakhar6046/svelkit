@@ -186,7 +186,7 @@ const BASE_URL = import.meta.env.VITE_SITE_URL || (browser ? window.location.ori
                     {$_('hero.slide1.partneredWith')}
                   </p>
                   <div class="flex gap-6">
-                    <img src="/assets/images/postmark.png" alt="postmark" />
+                    <img src="$lib/assets/images/$lib" alt="postmark" />
                     <img src="/assets/images/fedex.png" alt="fedex" />
                     <img src="/assets/images/purolator.png" alt="purolator" />
                     <img src="/assets/images/ups.png" alt="ups" />

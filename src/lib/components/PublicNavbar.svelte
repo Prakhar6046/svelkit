@@ -63,9 +63,9 @@
   let {
     logo = {
       url: '/',
-      src: '/static/img/app-logo.svg',
+      src: '/img/app-logo.svg',
       // optional dark-mode logo; override by passing logo.darkSrc prop
-      darkSrc: '$lib/assets/static/img/app-logo-white.svg',
+      darkSrc: '/img/app-logo-white.svg',
       alt: 'logo',
     },
     menu = [

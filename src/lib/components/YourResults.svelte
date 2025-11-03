@@ -309,7 +309,7 @@
                 </div>
 
                 <div class="text-right">
-                  <Button asChild class="common-button ms-auto">
+                  <Button class="common-button ms-auto">
                     {$_('shippingEstimator.result.selectLabel')}
                   </Button>
                 </div>

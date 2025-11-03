@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { Label } from '../../../lib/components/ui/label';
-  import { Input } from '../../../lib/components/ui/input';
-  import { Button } from '../../../lib/components/ui/button';
-  import { Checkbox } from '../../../lib/components/ui/checkbox';
+  import { Label } from '$lib/components/ui/label';
+  import { Input } from '$lib/components/ui/input';
+  import { Button } from '$lib/components/ui/button';
+  import { Checkbox } from '$lib/components/ui/checkbox';
   import {
     Select,
     SelectContent,
@@ -10,7 +10,7 @@
     SelectItem,
     SelectLabel,
     SelectTrigger,
-  } from '../../../lib/components/ui/select';
+  } from '$lib/components/ui/select';
   import {
     Table,
     TableBody,
@@ -18,8 +18,8 @@
     TableHead,
     TableHeader,
     TableRow,
-  } from '../../../lib/components/ui/table';
-  import * as Dialog from '../../../lib/components/ui/dialog';
+  } from '$lib/components/ui/table';
+  import * as Dialog from '$lib/components/ui/dialog';
   import Icon from '@iconify/svelte';
   import * as yup from 'yup';
   import { toast } from 'svelte-sonner';
@@ -738,7 +738,7 @@
       >
         <SelectTrigger
           class={`select-field ${
-            packageErrors['packageType'] ? 'border-red-500' : 'border-bland-200'
+            packageErrors['packageType'] ? 'border-red-500!' : ''
           }`}
         >
           {selectedPacakageLabelDetail}
@@ -774,7 +774,7 @@
             packageClearError('packageWeight');
         }}
         class={`input-field ${
-          packageErrors['packageWeight'] ? 'border-red-500' : 'border-bland-200'
+          packageErrors['packageWeight'] ? 'border-red-500!' : ''
         }`}
       />
       {#if packageErrors['packageWeight']}
@@ -790,7 +790,7 @@
       <Select type="single" name="WeightUnits" bind:value={selectedUnit}>
         <SelectTrigger
           class={`select-field ${
-            packageErrors['packageUnit'] ? 'border-red-500' : 'border-bland-200'
+            packageErrors['packageUnit'] ? 'border-red-500!' : ''
           }`}
         >
           {selectedUnitLabel}
@@ -831,7 +831,7 @@
             packageClearError('packageLength');
         }}
         class={`input-field ${
-          packageErrors['packageLength'] ? 'border-red-500' : 'border-bland-200'
+          packageErrors['packageLength'] ? 'border-red-500!' : ''
         }`}
       />
       {#if packageErrors['packageLength']}
@@ -852,7 +852,7 @@
           if (packageErrors['packageWidth']) packageClearError('packageWidth');
         }}
         class={`input-field ${
-          packageErrors['packageWidth'] ? 'border-red-500' : 'border-bland-200'
+          packageErrors['packageWidth'] ? 'border-red-500!' : ''
         }`}
       />
       {#if packageErrors['packageWidth']}
@@ -874,7 +874,7 @@
             packageClearError('packageHeight');
         }}
         class={`input-field ${
-          packageErrors['packageHeight'] ? 'border-red-500' : 'border-bland-200'
+          packageErrors['packageHeight'] ? 'border-red-500!' : ''
         }`}
       />
       {#if packageErrors['packageHeight']}
@@ -895,8 +895,8 @@
         <SelectTrigger
           class={`select-field ${
             packageErrors['packageUnit2']
-              ? 'border-red-500'
-              : 'border-bland-200'
+              ? 'border-red-500!'
+              : ''
           }`}
         >
           {selectedDimensionLabel}
@@ -936,8 +936,8 @@
           }}
           class={`input-field ${
             packageErrors['packageValue']
-              ? 'border-red-500'
-              : 'border-bland-200'
+              ? 'border-red-500!'
+              : ''
           }`}
         />
 
@@ -962,7 +962,7 @@
     </div>
   </div>
 
-  <Button onclick={handleAddPackage} asChild class="common-button mt-6">
+  <Button onclick={handleAddPackage} class="common-button mt-6">
     <Icon icon="mynaui:plus" class="size-7" />
     {addButtonText}
   </Button>
