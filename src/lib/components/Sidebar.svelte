@@ -256,25 +256,25 @@
         <CollapsibleContent>
           <ul class="flex flex-col gap-1.5 mt-3 ms-8">
             <li
-              onclick={() => navigate('/account/item1')}
+              onclick={() => goto('/account/item1')}
               class={`text-sm font-medium cursor-pointer p-1 rounded ${isActive('/account/item1') ? 'bg-primary-400 text-bland-25' : 'text-bland-950 hover:bg-primary-400 hover:text-bland-25'}`}
             >
               Item 1
             </li>
             <li
-              onclick={() => navigate('/account/item2')}
+              onclick={() => goto('/account/item2')}
               class={`text-sm font-medium cursor-pointer p-1 rounded ${isActive('/account/item2') ? 'bg-primary-400 text-bland-25' : 'text-bland-950 hover:bg-primary-400 hover:text-bland-25'}`}
             >
               Item 2
             </li>
             <li
-              onclick={() => navigate('/account/item3')}
+              onclick={() => goto('/account/item3')}
               class={`text-sm font-medium cursor-pointer p-1 rounded ${isActive('/account/item3') ? 'bg-primary-400 text-bland-25' : 'text-bland-950 hover:bg-primary-400 hover:text-bland-25'}`}
             >
               Item 3
             </li>
             <li
-              onclick={() => navigate('/account/item4')}
+              onclick={() => goto('/account/item4')}
               class={`text-sm font-medium cursor-pointer p-1 rounded ${isActive('/account/item4') ? 'bg-primary-400 text-bland-25' : 'text-bland-950 hover:bg-primary-400 hover:text-bland-25'}`}
             >
               Item 4

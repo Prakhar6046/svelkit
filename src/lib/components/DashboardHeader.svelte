@@ -12,6 +12,7 @@
   import { logout } from '../../lib/stores/auth';
   import { toast, Toaster } from 'svelte-sonner';
   import { navigate } from 'svelte-routing';
+	import { goto } from '$app/navigation';
 
   function handleLogout() {
     const result = logout();
@@ -19,7 +20,7 @@
     if (result.status) {
       toast.success('Logged Out Successfully');
       setTimeout(() => {
-        navigate('/');
+        goto('/');
       }, 1000);
     } else {
       toast.error('Failed to log out');
