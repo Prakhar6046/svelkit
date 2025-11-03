@@ -90,31 +90,56 @@
 
 // src/stores/auth.ts
 import { writable } from 'svelte/store';
+import { browser } from '$app/environment';
 
-export const authToken = writable<string | null>(
-  localStorage.getItem('auth_token')
-);
-export const userDetails = writable<Object | null>(
-  localStorage.getItem('user')
-);
-// Check if user is authenticated
-export const isAuthenticated = (): boolean => {
-  return localStorage.getItem('auth_token') !== null;
+// --- Safe initialization ---
+const getInitialToken = (): string | null => {
+  if (browser) return localStorage.getItem('auth_token');
+  return null;
 };
 
-// Generate a random token (pseudo-token)
+const getInitialUser = (): object | null => {
+  if (browser) {
+    const stored = localStorage.getItem('user');
+    return stored ? JSON.parse(stored) : null;
+  }
+  return null;
+};
+
+// --- Writable stores ---
+export const authToken = writable<string | null>(getInitialToken());
+export const userDetails = writable<object | null>(getInitialUser());
+
+// --- Sync changes to localStorage when in browser ---
+if (browser) {
+  authToken.subscribe((value) => {
+    if (value) localStorage.setItem('auth_token', value);
+    else localStorage.removeItem('auth_token');
+  });
+
+  userDetails.subscribe((value) => {
+    if (value) localStorage.setItem('user', JSON.stringify(value));
+    else localStorage.removeItem('user');
+  });
+}
+
+// --- Check authentication safely ---
+export const isAuthenticated = (): boolean => {
+  return browser && !!localStorage.getItem('auth_token');
+};
+
+// --- Utility: generate pseudo-token ---
 const generateToken = (): string => {
   return Math.random().toString(36).substr(2) + Date.now().toString(36);
 };
 
-// Log in locally
+// --- Log in ---
 export const login = (email: string, password: string) => {
   if (!email || !password) {
-    return {
-      status: 'error',
-      message: 'Please enter both email and password',
-    };
+    return { status: 'error', message: 'Please enter both email and password' };
   }
+
+  if (!browser) return { status: 'error', message: 'Cannot login during SSR' };
 
   try {
     const token = generateToken();
@@ -126,26 +151,21 @@ export const login = (email: string, password: string) => {
     authToken.set(token);
     userDetails.set(user);
 
-    return {
-      status: 'success',
-      message: 'Logged in successfully!',
-      token,
-    };
+    return { status: 'success', message: 'Logged in successfully!', token };
   } catch (error) {
     console.error('Login error:', error);
-    return {
-      status: 'error',
-      message: 'An unexpected error occurred during login',
-    };
+    return { status: 'error', message: 'Unexpected error during login' };
   }
 };
+
+// --- Create Account (same logic) ---
 export const createAccount = (email: string, password: string) => {
   if (!email || !password) {
-    return {
-      status: 'error',
-      message: 'Please enter both email and password',
-    };
+    return { status: 'error', message: 'Please enter both email and password' };
   }
+
+  if (!browser)
+    return { status: 'error', message: 'Cannot create account during SSR' };
 
   try {
     const token = generateToken();
@@ -157,25 +177,22 @@ export const createAccount = (email: string, password: string) => {
     authToken.set(token);
     userDetails.set(user);
 
-    return {
-      status: 'success',
-      message: 'Account Created Successfully!',
-      token,
-    };
+    return { status: 'success', message: 'Account created successfully!', token };
   } catch (error) {
-    console.error('Login error:', error);
-    return {
-      status: 'error',
-      message: 'An unexpected error occurred during creating an account',
-    };
+    console.error('Account creation error:', error);
+    return { status: 'error', message: 'Unexpected error during signup' };
   }
 };
-// Log out
+
+// --- Logout ---
 export const logout = () => {
-  localStorage.removeItem('auth_token');
+  if (browser) {
+    localStorage.removeItem('auth_token');
+    localStorage.removeItem('user');
+  }
+
   authToken.set(null);
-  return {
-    status: true,
-    message: 'Logged Out Succesfully',
-  };
+  userDetails.set(null);
+
+  return { status: true, message: 'Logged out successfully' };
 };

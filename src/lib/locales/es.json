@@ -344,37 +344,37 @@
       "subtitle": "Selecciona una categoría para encontrar respuestas rápidas y detalladas.",
       "cards": [
         {
-          "icon": "../../../public/assets/images/help-ic-1.svg",
+          "icon": "$lib/assets/images/help-ic-1.svg",
           "title": "Envíos y Entregas",
           "description": "Todo lo que necesitas saber sobre enviar, recibir y rastrear tus envíos.",
           "cta": "Explorar"
         },
         {
-          "icon": "../../../public/assets/images/help-ic-2.svg",
+          "icon": "$lib/assets/images/help-ic-2.svg",
           "title": "Devoluciones y Cumplimiento",
           "description": "Guías para manejar devoluciones y asegurar que tus envíos cumplan con la ley.",
           "cta": "Explorar"
         },
         {
-          "icon": "../../../public/assets/images/help-ic-3.svg",
+          "icon": "$lib/assets/images/help-ic-3.svg",
           "title": "Impresión y Herramientas",
           "description": "Aprende cómo imprimir etiquetas y usar nuestras integraciones inteligentes para ahorrar tiempo.",
           "cta": "Explorar"
         },
         {
-          "icon": "../../../public/assets/images/help-ic-4.svg",
+          "icon": "$lib/assets/images/help-ic-4.svg",
           "title": "Facturación y Cuenta",
           "description": "Administra pagos, configuraciones de cuenta y seguridad con facilidad.",
           "cta": "Explorar"
         },
         {
-          "icon": "../../../public/assets/images/help-ic-5.svg",
+          "icon": "$lib/assets/images/help-ic-5.svg",
           "title": "Soporte y Solución de Problemas",
           "description": "Soluciones rápidas para problemas comunes y cómo obtener ayuda cuando la necesites.",
           "cta": "Explorar"
         },
         {
-          "icon": "../../../public/assets/images/help-ic-6.svg",
+          "icon": "$lib/assets/images/help-ic-6.svg",
           "title": "Cómo Entregar Envíos",
           "description": "Diferentes formas de entregar tus paquetes — la que sea más conveniente.",
           "cta": "Explorar"

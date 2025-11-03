@@ -1,6 +1,6 @@
 <script lang="ts">
   import Icon from '@iconify/svelte';
-  import trackResultsMap from '../../../public/assets/images/track-results-map.svg';
+  import trackResultsMap from '$lib/assets/images/track-results-map.svg';
 </script>
 
 <section>

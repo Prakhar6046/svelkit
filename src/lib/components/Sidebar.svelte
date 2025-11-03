@@ -1,6 +1,6 @@
 <script lang="ts">
   import Icon from '@iconify/svelte';
-  import AppLogo from '../../../public/static/img/app-logo.svg';
+  import AppLogo from '$lib/assets/static/img/app-logo.svg';
   import {
     Collapsible,
     CollapsibleContent,

@@ -8,7 +8,7 @@
     DropdownMenuTrigger,
   } from './ui/dropdown-menu';
   import { showDashboardSidebar } from '../../lib/stores/store';
-  import UserImg from '../../../public/assets/images/dashboard/user.png';
+  import UserImg from '$lib/assets/images/dashboard/user.png';
   import { logout } from '../../lib/stores/auth';
   import { toast, Toaster } from 'svelte-sonner';
   import { navigate } from 'svelte-routing';
