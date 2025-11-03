@@ -17,7 +17,7 @@
   
    import { get } from 'svelte-i18n';
 
-  const savingsCards = getMessage('pricing.pricingPage.savingsCards');
+  const savingsCards = get('pricing.pricingPage.savingsCards');
 
 </script>
 
