@@ -922,7 +922,21 @@
                               </p>
                               <div class="flex flex-col gap-2">
                                 <label class="inline-flex items-center gap-3">
-                                  <Checkbox bind:checked={pFedEx} />
+                                  <Checkbox 
+                                    bind:checked={pFedEx}
+                                    onCheckedChange={() => {
+                                      try {
+                                        pendingCount = applyFilterSet({
+                                          usePending: true,
+                                          tab: $activeTab,
+                                          query: $searchQuery,
+                                          date: $selectedRange,
+                                        }).length;
+                                      } catch (e) {
+                                        pendingCount = shipmentsData.length;
+                                      }
+                                    }}
+                                  />
                                   <img
                                     src="/assets/images/carrierServices1.png"
                                     alt="FedEx"
@@ -931,7 +945,21 @@
                                 </label>
 
                                 <label class="inline-flex items-center gap-3">
-                                  <Checkbox bind:checked={pUSPS} />
+                                  <Checkbox 
+                                    bind:checked={pUSPS}
+                                    onCheckedChange={() => {
+                                      try {
+                                        pendingCount = applyFilterSet({
+                                          usePending: true,
+                                          tab: $activeTab,
+                                          query: $searchQuery,
+                                          date: $selectedRange,
+                                        }).length;
+                                      } catch (e) {
+                                        pendingCount = shipmentsData.length;
+                                      }
+                                    }}
+                                  />
                                   <img
                                     src="/assets/images/carrierServices2.png"
                                     alt="USPS"
@@ -940,7 +968,21 @@
                                 </label>
 
                                 <label class="inline-flex items-center gap-3">
-                                  <Checkbox bind:checked={pDHL} />
+                                  <Checkbox 
+                                    bind:checked={pDHL}
+                                    onCheckedChange={() => {
+                                      try {
+                                        pendingCount = applyFilterSet({
+                                          usePending: true,
+                                          tab: $activeTab,
+                                          query: $searchQuery,
+                                          date: $selectedRange,
+                                        }).length;
+                                      } catch (e) {
+                                        pendingCount = shipmentsData.length;
+                                      }
+                                    }}
+                                  />
                                   <img
                                     src="/assets/images/carrierServices3.png"
                                     alt="DHL"
@@ -961,7 +1003,21 @@
                                 <label
                                   class="flex items-center gap-3 border border-[#E5E7EB] rounded-md p-3"
                                 >
-                                  <Checkbox bind:checked={pStandard} />
+                                  <Checkbox 
+                                    bind:checked={pStandard}
+                                    onCheckedChange={() => {
+                                      try {
+                                        pendingCount = applyFilterSet({
+                                          usePending: true,
+                                          tab: $activeTab,
+                                          query: $searchQuery,
+                                          date: $selectedRange,
+                                        }).length;
+                                      } catch (e) {
+                                        pendingCount = shipmentsData.length;
+                                      }
+                                    }}
+                                  />
                                   <Icon
                                     icon="ph:truck"
                                     width="24"
@@ -973,7 +1029,21 @@
                                 <label
                                   class="flex items-center gap-3 border border-[#E5E7EB] rounded-md p-3"
                                 >
-                                  <Checkbox bind:checked={pExpress} />
+                                  <Checkbox 
+                                    bind:checked={pExpress}
+                                    onCheckedChange={() => {
+                                      try {
+                                        pendingCount = applyFilterSet({
+                                          usePending: true,
+                                          tab: $activeTab,
+                                          query: $searchQuery,
+                                          date: $selectedRange,
+                                        }).length;
+                                      } catch (e) {
+                                        pendingCount = shipmentsData.length;
+                                      }
+                                    }}
+                                  />
                                   <Icon
                                     icon="ph:truck"
                                     width="24"
@@ -985,7 +1055,21 @@
                                 <label
                                   class="flex items-center gap-3 border border-[#E5E7EB] rounded-md p-3"
                                 >
-                                  <Checkbox bind:checked={pFreight} />
+                                  <Checkbox 
+                                    bind:checked={pFreight}
+                                    onCheckedChange={() => {
+                                      try {
+                                        pendingCount = applyFilterSet({
+                                          usePending: true,
+                                          tab: $activeTab,
+                                          query: $searchQuery,
+                                          date: $selectedRange,
+                                        }).length;
+                                      } catch (e) {
+                                        pendingCount = shipmentsData.length;
+                                      }
+                                    }}
+                                  />
                                   <Icon
                                     icon="ph:train-regional-duotone"
                                     width="24"
@@ -997,7 +1081,21 @@
                                 <label
                                   class="flex items-center gap-3 border border-[#E5E7EB] rounded-md p-3"
                                 >
-                                  <Checkbox bind:checked={pInternational} />
+                                  <Checkbox 
+                                    bind:checked={pInternational}
+                                    onCheckedChange={() => {
+                                      try {
+                                        pendingCount = applyFilterSet({
+                                          usePending: true,
+                                          tab: $activeTab,
+                                          query: $searchQuery,
+                                          date: $selectedRange,
+                                        }).length;
+                                      } catch (e) {
+                                        pendingCount = shipmentsData.length;
+                                      }
+                                    }}
+                                  />
                                   <Icon
                                     icon="zondicons:network"
                                     width="20"

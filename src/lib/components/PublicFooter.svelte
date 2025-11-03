@@ -179,7 +179,7 @@
             <ul class="flex flex-col gap-3 sm:gap-4 mt-5 sm:mt-7">
               <li>
                 <a
-                  href="/"
+                  href="/get-estimate-tracking"
                   class="text-bland-150 text-xs sm:text-sm md:text-base"
                   >Get Estimate</a
                 >

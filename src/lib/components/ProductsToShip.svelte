@@ -214,7 +214,7 @@
               <SelectContent>
                 <SelectGroup>
                   <SelectLabel>From</SelectLabel>
-                  <SelectItem>None</SelectItem>
+                  <SelectItem   value="None">None</SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>
