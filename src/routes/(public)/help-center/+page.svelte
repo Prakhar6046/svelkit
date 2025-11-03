@@ -70,13 +70,13 @@
               <div
                 class="bg-white border border-bland-300/30 rounded-[24px] p-5 flex flex-col gap-4 justify-start"
               >
-                <img src={card.icon} class="w-12" alt={card.title} />
+                <img src={(card as any).icon} class="w-12" alt={(card as any).title} />
                 <p class="text-2xl font-semibold text-bland-950 text-start">
-                  {card[0]}
+                  {(card as any).title}
                 </p>
-                <p class="text-start">{card.description}</p>
+                <p class="text-start">{(card as any).description}</p>
                 <a href="/" class="text-start font-semibold underline text-lg"
-                  >{card.cta}</a
+                  >{(card as any).cta}</a
                 >
               </div>
             {/each}
@@ -93,15 +93,15 @@
             <Breadcrumb.List>
               {#each $t('helpCenter.breadcrumbs') as crumb, i}
                 <Breadcrumb.Item>
-                  {#if crumb.link}
+                  {#if (crumb as any).link}
                     <Breadcrumb.Link
-                      href={crumb.link}
+                      href={(crumb as any).link}
                       class="text-bland-300 text-lg"
-                      >{crumb.label}</Breadcrumb.Link
+                      >{(crumb as any).label}</Breadcrumb.Link
                     >
                   {:else}
                     <Breadcrumb.Page class="font-semibold text-lg"
-                      >{crumb.label}</Breadcrumb.Page
+                      >{(crumb as any).label}</Breadcrumb.Page
                     >
                   {/if}
                 </Breadcrumb.Item>
@@ -126,9 +126,9 @@
               {#each $t('helpCenter.tabs') as tab}
                 <TabsTrigger
                   class="w-full justify-between !px-6 [&>span.icon]:hidden [&[data-state=active]>span.icon]:inline-flex cursor-pointer"
-                  value={tab.value}
+                  value={(tab as any).value}
                 >
-                  <span>{tab.label}</span>
+                  <span>{(tab as any).label}</span>
                   <span class="icon ms-auto"
                     ><Icon icon="solar:arrow-right-linear" class="size-6" /></span
                   >
@@ -137,40 +137,40 @@
             </TabsList>
   
             {#each $t('helpCenter.tabs') as tab}
-              <TabsContent value={tab.value} class="col-span-5 sm:col-span-3">
+              <TabsContent value={(tab as any).value} class="col-span-5 sm:col-span-3">
                 <div
                   class="p-6 rounded-[24px] border border-secondary-700/60 bg-[#FDFDFF] flex flex-col gap-4"
                 >
                   <h1 class="text-xl font-medium text-secondary-700">
-                    {tab.content.title}
+                    {(tab as any).content.title}
                   </h1>
-                  <p>{@html tab.content.body}</p>
+                  <p>{@html (tab as any).content.body}</p>
   
-                  {#if tab.content.subTabs}
+                  {#if (tab as any).content.subTabs}
                     <Tabs
-                      value={tab.content.subTabs[0].value}
+                      value={(tab as any).content.subTabs[0].value}
                       class="grid grid-cols-5 gap-4 w-full"
                     >
                       <TabsList
                         class="rounded-3xl p-1 [&_[data-state=active]]:bg-secondary-200 [&_button]:rounded-xl [&_button]:text-sm [&_button]:text-bland-950 [&_button]:font-normal [&_button]:py-3 [&_button]:px-10 [&_button]:h-auto flex flex-row lg:flex-col col-span-5 lg:col-span-2 w-full overflow-auto items-start [&_[data-state=active]]:shadow-none [&_[data-state=active]]:text-secondary-700 h-fit justify-start"
                       >
-                        {#each tab.content.subTabs as subTab}
+                        {#each (tab as any).content.subTabs as subTab}
                           <TabsTrigger
                             class="w-full justify-between !px-6 [&>span.icon]:hidden [&[data-state=active]>span.icon]:inline-flex h-fit"
-                            value={subTab.value}
+                            value={(subTab as any).value}
                           >
-                            <span>{subTab.label}</span>
+                            <span>{(subTab as any).label}</span>
                           </TabsTrigger>
                         {/each}
                       </TabsList>
   
-                      {#each tab.content.subTabs as subTab}
+                      {#each (tab as any).content.subTabs as subTab}
                         <TabsContent
-                          value={subTab.value}
+                          value={(subTab as any).value}
                           class="col-span-5 lg:col-span-3 p-6 border border-bland-300/30 rounded-xl flex flex-col gap-4 text-bland-950"
                         >
-                          <h1 class="font-medium text-xl">{subTab.title}</h1>
-                          <p>{@html subTab.body}</p>
+                          <h1 class="font-medium text-xl">{(subTab as any).title}</h1>
+                          <p>{@html (subTab as any).body}</p>
                         </TabsContent>
                       {/each}
                     </Tabs>
@@ -194,7 +194,6 @@
   
           <div class="col-span-4 my-auto">
             <Button
-              asChild
               class="ms-auto me-auto md:me-0 flex items-center font-semibold text-sm sm:text-base md:text-lg text-bland-25 bg-primary-400 shadow-none border border-primary-400 rounded-xl py-2 xl:py-2.5 !px-6 h-auto cursor-pointer hover:shadow-md"
             >
               {$t('helpCenter.cta.button')}<Icon

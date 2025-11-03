@@ -16,7 +16,16 @@
   import Globe from '$lib/assets/images/pricing/ic-globe.svg';
   import { t } from 'svelte-i18n';
   import { onMount } from 'svelte';
-
+  import { setMeta } from '$lib/meta/meta';
+  onMount(() => {
+    setMeta({
+      title: 'Pricing | User Message',
+      description: 'Learn more about us and our mission.',
+      image:
+        'https://images.unsplash.com/photo-1517404215738-15263e9f9178?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dXJsfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000',
+      url: import.meta.env.VITE_SITE_URL,
+    });
+  });
 </script>
 
 <PublicNavbar />
@@ -42,7 +51,6 @@
             </p>
 
             <Button
-              
               class="mt-8 md:mt-[60px] lg:mx-0 mx-auto flex items-center font-semibold text-sm sm:text-base md:text-lg text-bland-25 bg-primary-400 shadow-none border border-primary-400 rounded-xl py-2 xl:py-2.5 !px-6 h-auto cursor-pointer hover:shadow-md"
             >
               {$t('pricing.pricingPage.hero.button')}
@@ -63,11 +71,11 @@
                   class="absolute top-30 -left-20 bg-white border-4 border-blue-600 w-fit rounded-2xl p-4 shadow-2xl"
                 >
                   <p class="text-base font-bold mb-2 text-primary-400">
-                    {card.label}
+                    {(card as any)?.label || ''}
                   </p>
                   <div class="flex gap-3 items-center">
                     <p class="text-xl sm:text-3xl font-semibold text-bland-950">
-                      {card.price}
+                      {(card as any)?.price || ''}
                     </p>
                   </div>
                 </div>
@@ -130,12 +138,12 @@
               {#each $t('pricing.pricingPage.pricingTable.tabs.canada') as row}
                 <tr class="border-b accordeion-border last:border-b-0">
                   <td class="p-4 whitespace-nowrap font-medium">
-                    {row.carrier}
+                    {(row as any)?.carrier || ''}
                   </td>
-                  <td class="p-4 whitespace-nowrap">{row.retailRate}</td>
-                  <td class="p-4 whitespace-nowrap">{row.ourRate}</td>
+                  <td class="p-4 whitespace-nowrap">{(row as any)?.retailRate || ''}</td>
+                  <td class="p-4 whitespace-nowrap">{(row as any)?.ourRate || ''}</td>
                   <td class="p-4 whitespace-nowrap">
-                    <span class="text-primary-400 font-bold">{row.youSave}</span
+                    <span class="text-primary-400 font-bold">{(row as any)?.youSave || ''}</span
                     >
                   </td>
                 </tr>
@@ -152,7 +160,6 @@
       </Tabs>
 
       <Button
-        
         class="mt-8 md:mt-[60px] mx-auto flex items-center font-semibold text-sm sm:text-base md:text-lg text-bland-25 bg-primary-400 shadow-none border border-primary-400 rounded-xl py-2 xl:py-2.5 !px-6 h-auto cursor-pointer hover:shadow-md"
       >
         {$t('pricing.pricingPage.pricingTable.ctaButton')}
@@ -194,27 +201,27 @@
             <div
               class="w-12 h-12 bg-primary-400 rounded-full flex items-center justify-center mb-4"
             >
-              {#if feature.icon === 'Dollar'}<img
+              {#if (feature as any)?.icon === 'Dollar'}<img
                   src={Dollar}
-                  alt={feature.title}
+                  alt={(feature as any)?.title || 'Dollar icon'}
                 />{/if}
-              {#if feature.icon === 'Lightning'}<img
+              {#if (feature as any)?.icon === 'Lightning'}<img
                   src={Lightning}
-                  alt={feature.title}
+                  alt={(feature as any)?.title || 'Lightning icon'}
                 />{/if}
-              {#if feature.icon === 'Dashboard'}<img
+              {#if (feature as any)?.icon === 'Dashboard'}<img
                   src={Dashboard}
-                  alt={feature.title}
+                  alt={(feature as any)?.title || 'Dashboard icon'}
                 />{/if}
-              {#if feature.icon === 'Globe'}<img
+              {#if (feature as any)?.icon === 'Globe'}<img
                   src={Globe}
-                  alt={feature.title}
+                  alt={(feature as any)?.title || 'Globe icon'}
                 />{/if}
             </div>
             <h3 class="text-xl sm:text-2xl text-bland-950 font-semibold">
-              {feature.title}
+              {(feature as any)?.title || ''}
             </h3>
-            <p class="text-base mt-4">{feature.description}</p>
+            <p class="text-base mt-4">{(feature as any)?.description || ''}</p>
           </div>
         {/each}
       </div>
@@ -237,7 +244,6 @@
 
         <div class="col-span-4 my-auto">
           <Button
-            
             class="ms-auto me-auto md:me-0 flex items-center font-semibold text-sm sm:text-base md:text-lg text-bland-25 bg-primary-400 shadow-none border border-primary-400 rounded-xl py-2 xl:py-2.5 !px-6 h-auto cursor-pointer hover:shadow-md"
           >
             {$t('pricing.pricingPage.ctaSection.button')}

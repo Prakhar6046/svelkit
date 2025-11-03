@@ -113,7 +113,6 @@
   <Dialog.Root bind:open={filtersDialogOpen}>
     <Dialog.Trigger>
       <Button
-        asChild
         class="ms-auto me-auto md:me-0 flex items-center font-normal text-xs text-bland-950  shadow-none border-2 border-bland-200 rounded-md py-2 xl:py-2.5 px-3! h-auto cursor-pointer hover:shadow-md flex-wrap gap-2"
       >
         <span
